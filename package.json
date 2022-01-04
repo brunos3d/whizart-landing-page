@@ -1,9 +1,9 @@
 {
-  "name": "typescript-nextjs-starter",
+  "name": "whizart-landing-page",
   "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
+  "author": "Bruno Silva <hi@brunosilva.io> (@brunos3d)",
   "license": "MIT",
   "keywords": [
     "nextjs",
@@ -27,9 +27,12 @@
     ]
   },
   "dependencies": {
+    "classnames": "2.3.1",
+    "is-absolute-url": "4.0.1",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "url-join": "4.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "16.0.1",
@@ -37,6 +40,7 @@
     "@types/node": "16.11.17",
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
+    "@types/url-join": "4.0.1",
     "@typescript-eslint/eslint-plugin": "5.8.1",
     "@typescript-eslint/parser": "5.8.1",
     "commitizen": "4.2.4",
