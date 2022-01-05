@@ -25,12 +25,13 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
           </Button>
         </div>
       </Container>
+
       <div className={styles.backgroundContainer}>
         <Image
           src="/images/coins-and-tools.png"
           alt="Painting showing brushes, gold coins, ink drops and flying papers"
-          width="709"
-          height="506"
+          width={709}
+          height={506}
         />
       </div>
     </section>
