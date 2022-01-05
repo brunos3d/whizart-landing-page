@@ -1,0 +1,18 @@
+.paragraph {
+  font-family: Kanit;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--coffee-bean);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .paragraph {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

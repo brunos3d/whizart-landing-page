@@ -4,36 +4,33 @@ import { Button } from 'reakit/Button';
 import cn from 'classnames';
 
 import { WHITEPAPER_URL } from '@/data/urls';
-
-import { Container } from '@/components';
+import { Container, Subtitle, Paragraph } from '@/components';
 
 import styles from './styles.module.css';
 
-export type HeroProps = HTMLAttributes<HTMLElement>;
+export type PlayToEarnProps = HTMLAttributes<HTMLElement>;
 
-export default function Hero({ className, ...rest }: HeroProps) {
+export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
   return (
     <section className={cn(styles.section, className)} {...rest}>
       <Container className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.frameContent}>
-            <h1 className={styles.title}>Play to Earn</h1>
-            <p className={styles.description}>Mint NFT Art</p>
-          </div>
+          <Subtitle className={styles.subtitle}>Play to Earn</Subtitle>
+          <Paragraph className={styles.paragraph}>
+            Manage artists, workshops and paints to earn $WHIZ and contribute to
+            the world of NFT Art..
+          </Paragraph>
           <Button className={styles.cta} as="a" href={WHITEPAPER_URL}>
             Read the Whitepaper
           </Button>
         </div>
       </Container>
-
       <div className={styles.backgroundContainer}>
         <Image
-          src="/images/main-art.png"
-          alt="Painting showing game artists in their respective environments"
-          layout="responsive"
-          width={1511}
-          height={1075}
-          className={styles.backgroundImage}
+          src="/images/coins-and-tools.png"
+          alt="Painting showing brushes, gold coins, ink drops and flying papers"
+          width="709"
+          height="506"
         />
       </div>
     </section>
