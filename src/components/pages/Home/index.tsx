@@ -1,5 +1,12 @@
 import { SEO, SocialBar } from '@/components';
-import { Navbar, Hero, PlayToEarn, Gameplay, Artists } from './sections';
+import {
+  Navbar,
+  Hero,
+  PlayToEarn,
+  Gameplay,
+  Artists,
+  ArtificialIntelligence,
+} from './sections';
 
 import styles from './styles.module.css';
 
@@ -20,6 +27,8 @@ export default function Home() {
         <Gameplay />
 
         <Artists />
+
+        <ArtificialIntelligence />
       </main>
     </>
   );

@@ -40,8 +40,6 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
           alt="Sistine Chapel ceiling photo with The Creation of Adam in the center"
           layout="fill"
           objectFit="cover"
-          width={1511}
-          height={1146}
           className={styles.backgroundImage}
         />
       </div>
