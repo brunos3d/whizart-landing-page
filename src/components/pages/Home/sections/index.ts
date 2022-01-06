@@ -4,3 +4,4 @@ export { default as PlayToEarn } from './PlayToEarn';
 export { default as Gameplay } from './Gameplay';
 export { default as Artists } from './Artists';
 export { default as ArtificialIntelligence } from './ArtificialIntelligence';
+export { default as Team } from './Team';

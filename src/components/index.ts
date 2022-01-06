@@ -4,3 +4,4 @@ export { default as SocialBar } from './SocialBar';
 export { default as Subtitle } from './Subtitle';
 export { default as Paragraph } from './Paragraph';
 export { default as BlurredCard } from './BlurredCard';
+export { default as TeamMember } from './TeamMember';

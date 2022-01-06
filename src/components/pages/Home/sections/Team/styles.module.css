@@ -1,0 +1,32 @@
+.section {
+  position: relative;
+  padding-bottom: 230px;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamMembers {
+  width: 100%;
+  margin-top: 71px;
+  list-style: none;
+  display: grid;
+  gap: 78px normal;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.teamMembers li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.teamMember {
+  flex: 1;
+  height: 100%;
+  max-width: 292px;
+  align-items: center;
+}

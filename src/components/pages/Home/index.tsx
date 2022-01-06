@@ -6,6 +6,7 @@ import {
   Gameplay,
   Artists,
   ArtificialIntelligence,
+  Team,
 } from './sections';
 
 import styles from './styles.module.css';
@@ -29,6 +30,8 @@ export default function Home() {
         <Artists />
 
         <ArtificialIntelligence />
+
+        <Team />
       </main>
     </>
   );
