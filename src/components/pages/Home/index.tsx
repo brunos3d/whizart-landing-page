@@ -7,6 +7,7 @@ import {
   Artists,
   ArtificialIntelligence,
   Team,
+  Footer,
 } from './sections';
 
 import styles from './styles.module.css';
@@ -33,6 +34,8 @@ export default function Home() {
 
         <Team />
       </main>
+
+      <Footer />
     </>
   );
 }
