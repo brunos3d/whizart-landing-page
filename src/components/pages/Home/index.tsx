@@ -26,13 +26,13 @@ export default function Home() {
 
         <PlayToEarn />
 
-        <Gameplay />
+        <Gameplay id="gameplay" />
 
-        <Artists />
+        <Artists id="nft" />
 
-        <ArtificialIntelligence />
+        <ArtificialIntelligence id="ai" />
 
-        <Team />
+        <Team id="team" />
       </main>
 
       <Footer />
