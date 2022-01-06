@@ -5,6 +5,8 @@
 }
 
 .container {
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -18,4 +20,35 @@
   letter-spacing: -0.03em;
   text-align: left;
   color: var(--taupe-gray);
+}
+
+.privacy {
+  margin-top: 16px;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .privacy {
+    margin-top: unset;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
