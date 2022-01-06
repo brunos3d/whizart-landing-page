@@ -15,17 +15,17 @@
 .avatarContainer {
   border-radius: 1000px;
   overflow: hidden;
-  width: 160px;
-  height: 160px;
+  width: 100px;
+  height: 100px;
 }
 
 .name {
   margin-top: 31px;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--coffee-bean);
@@ -34,10 +34,10 @@
 .bio {
   margin-top: 18px;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 27px;
+  line-height: 20px;
   letter-spacing: -0.03em;
   text-align: center;
   color: var(--coffee-bean);
@@ -46,4 +46,38 @@
 .socialLink {
   justify-self: end;
   margin-top: 22px;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .avatarContainer {
+    width: 160px;
+    height: 160px;
+  }
+
+  .name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .bio {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

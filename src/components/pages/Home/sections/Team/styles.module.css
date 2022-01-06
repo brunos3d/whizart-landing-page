@@ -14,8 +14,7 @@
   margin-top: 71px;
   list-style: none;
   display: grid;
-  gap: 78px normal;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 32px normal;
 }
 
 .teamMembers li {
@@ -27,6 +26,40 @@
 .teamMember {
   flex: 1;
   height: 100%;
-  max-width: 292px;
+  max-width: 396px;
   align-items: center;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .teamMembers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .teamMember {
+    max-width: 230px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .teamMember {
+    max-width: 292px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .teamMembers {
+    gap: 78px normal;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

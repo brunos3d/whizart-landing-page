@@ -17,20 +17,20 @@ export default function Home() {
     <>
       <SEO shouldIndexPage />
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <SocialBar className={styles.socialBar} />
 
       <main className={styles.main}>
-        <Hero />
+        {/* <Hero /> */}
 
-        <PlayToEarn />
+        {/* <PlayToEarn /> */}
 
-        <Gameplay id="gameplay" />
+        {/* <Gameplay id="gameplay" /> */}
 
-        <Artists id="nft" />
+        {/* <Artists id="nft" /> */}
 
-        <ArtificialIntelligence id="ai" />
+        {/* <ArtificialIntelligence id="ai" /> */}
 
         <Team id="team" />
       </main>
