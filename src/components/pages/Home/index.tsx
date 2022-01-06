@@ -28,7 +28,7 @@ export default function Home() {
 
         {/* <Gameplay id="gameplay" /> */}
 
-        {/* <Artists id="nft" /> */}
+        <Artists id="nft" />
 
         {/* <ArtificialIntelligence id="ai" /> */}
 

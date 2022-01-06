@@ -30,7 +30,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
               placeholder="blur"
             />
           </li>
-          <li>
+          <li className={styles.cardItem}>
             <Image
               src="/images/card-2.png"
               blurDataURL="/images/card-2.png"
@@ -40,7 +40,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
               placeholder="blur"
             />
           </li>
-          <li>
+          <li className={styles.cardItem}>
             <Image
               src="/images/card-3.png"
               blurDataURL="/images/card-3.png"

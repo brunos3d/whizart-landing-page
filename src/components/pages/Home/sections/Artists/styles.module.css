@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 109px 0;
+  padding: 50px 0;
 }
 
 .container {
@@ -19,9 +19,44 @@
 }
 
 .cards {
-  margin-top: 56px;
+  margin-top: 20px;
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 16px;
+  flex-direction: column;
+}
+
+.cardItem {
+  max-width: 320px;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .cards {
+    flex-direction: row;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .cards {
+    margin-top: 56px;
+    gap: 16px;
+  }
+
+  .section {
+    padding: 109px 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
