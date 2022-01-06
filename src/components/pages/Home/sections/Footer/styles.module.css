@@ -13,10 +13,10 @@
 .copyright,
 .privacy {
   font-family: Inter;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 20px;
   letter-spacing: -0.03em;
   text-align: left;
   color: var(--taupe-gray);
@@ -43,6 +43,11 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .copyright,
+  .privacy {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
