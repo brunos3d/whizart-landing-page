@@ -1,5 +1,5 @@
 import { SEO, SocialBar } from '@/components';
-import { Navbar, Hero, PlayToEarn } from './sections';
+import { Navbar, Hero, PlayToEarn, Gameplay } from './sections';
 
 import styles from './styles.module.css';
 
@@ -16,6 +16,8 @@ export default function Home() {
         <Hero />
 
         <PlayToEarn />
+
+        <Gameplay />
       </main>
     </>
   );

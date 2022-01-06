@@ -22,6 +22,8 @@
 }
 
 .subtitle {
+  font-size: 56px;
+  line-height: 73px;
   text-align: center;
   color: var(--white);
 }
