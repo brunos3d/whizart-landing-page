@@ -23,6 +23,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
           <li className={styles.cardItem}>
             <Image
               src="/images/card-1.png"
+              blurDataURL="/images/card-1.png"
               alt="image of card 1 containing the artist Badzilla"
               width={413}
               height={574}
@@ -32,6 +33,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
           <li>
             <Image
               src="/images/card-2.png"
+              blurDataURL="/images/card-2.png"
               alt="image of card 2 containing the artist Tarsila"
               width={413}
               height={567}
@@ -41,6 +43,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
           <li>
             <Image
               src="/images/card-3.png"
+              blurDataURL="/images/card-3.png"
               alt="image of card 3 containing the artist Salvador Daqui"
               width={413}
               height={574}

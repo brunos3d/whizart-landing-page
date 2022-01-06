@@ -7,14 +7,14 @@ import styles from './styles.module.css';
 export type TeamMemberProps = {
   name: string;
   bio: string;
-  avatar: string;
+  avatarUrl: string;
   socialUrl?: string;
 };
 
 export default function TeamMember({
   name,
   bio,
-  avatar,
+  avatarUrl,
   socialUrl,
   className,
   ...rest
@@ -24,7 +24,8 @@ export default function TeamMember({
       <div className={styles.info}>
         <div className={styles.avatarContainer}>
           <Image
-            src={avatar}
+            src={avatarUrl}
+            blurDataURL={avatarUrl}
             alt={`${name} Image`}
             width={512}
             height={512}

@@ -37,6 +37,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
       <div className={styles.backgroundContainer}>
         <Image
           src="/images/sistine-chapel-the-creation-of-adam.png"
+          blurDataURL="/images/sistine-chapel-the-creation-of-adam.png"
           alt="Sistine Chapel ceiling photo with The Creation of Adam in the center"
           layout="fill"
           objectFit="cover"
