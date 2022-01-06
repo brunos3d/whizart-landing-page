@@ -2,20 +2,10 @@
   position: relative;
   margin: 2px;
   padding: 50px;
-  background: url('/images/noise.png');
-  backdrop-filter: blur(140px);
+  backdrop-filter: blur(50px);
   border-radius: 10px;
+  background: url('/images/noise.png');
   border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.noiseContainer {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-
-.noise {
-  filter: blur(1px);
 }
 
 .title,
