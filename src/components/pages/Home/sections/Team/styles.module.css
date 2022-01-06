@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding-bottom: 230px;
+  padding-bottom: 150px;
 }
 
 .container {
@@ -54,6 +54,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .section {
+    padding-bottom: 230px;
+  }
+
   .teamMembers {
     gap: 78px normal;
     grid-template-columns: repeat(3, 1fr);
