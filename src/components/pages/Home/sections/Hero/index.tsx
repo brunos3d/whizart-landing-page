@@ -40,6 +40,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
           width={1511}
           height={1075}
           className={styles.backgroundImage}
+          placeholder="blur"
         />
       </div>
     </section>

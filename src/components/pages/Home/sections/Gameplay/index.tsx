@@ -41,6 +41,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
           layout="fill"
           objectFit="cover"
           className={styles.backgroundImage}
+          placeholder="blur"
         />
       </div>
     </section>

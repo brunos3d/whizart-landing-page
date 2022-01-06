@@ -23,7 +23,13 @@ export default function TeamMember({
     <div className={cn(styles.teamMember, className)} {...rest}>
       <div className={styles.info}>
         <div className={styles.avatarContainer}>
-          <Image src={avatar} alt={`${name} Image`} width={512} height={512} />
+          <Image
+            src={avatar}
+            alt={`${name} Image`}
+            width={512}
+            height={512}
+            placeholder="blur"
+          />
         </div>
         <h3 className={styles.name}>{name}</h3>
         <p className={styles.bio}>{bio}</p>

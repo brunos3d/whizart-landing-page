@@ -26,6 +26,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
               alt="image of card 1 containing the artist Badzilla"
               width={413}
               height={574}
+              placeholder="blur"
             />
           </li>
           <li>
@@ -34,6 +35,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
               alt="image of card 2 containing the artist Tarsila"
               width={413}
               height={567}
+              placeholder="blur"
             />
           </li>
           <li>
@@ -42,6 +44,7 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
               alt="image of card 3 containing the artist Salvador Daqui"
               width={413}
               height={574}
+              placeholder="blur"
             />
           </li>
         </ul>

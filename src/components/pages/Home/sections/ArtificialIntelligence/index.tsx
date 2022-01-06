@@ -25,6 +25,7 @@ export default function ArtificialIntelligence({
           layout="fill"
           objectFit="scale-down"
           objectPosition="left"
+          placeholder="blur"
         />
       </div>
 
