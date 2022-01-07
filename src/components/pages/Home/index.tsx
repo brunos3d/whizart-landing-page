@@ -20,7 +20,9 @@ export default function Home() {
 
       <Navbar />
 
-      <SocialBar className={styles.socialBar} />
+      <div className={styles.socialBarContainer}>
+        <SocialBar direction="vertical" />
+      </div>
 
       <main className={styles.main}>
         <Hero />

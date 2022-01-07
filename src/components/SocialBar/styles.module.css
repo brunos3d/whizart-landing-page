@@ -1,0 +1,18 @@
+.bar {
+  width: 100%;
+  max-width: 356px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1000px;
+  background: var(--white);
+  padding: 22px 52px;
+}
+
+.bar.vertical {
+  transform: rotate(-90deg);
+}
+
+.vertical .socialLink {
+  transform: rotate(90deg);
+}
