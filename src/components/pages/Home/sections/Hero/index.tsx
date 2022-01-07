@@ -36,13 +36,11 @@ export default function Hero({ className, ...rest }: HeroProps) {
       <div className={styles.backgroundContainer}>
         <Image
           src="/images/main-art.png"
-          blurDataURL="/images/main-art.png"
           alt="Painting showing game artists in their respective environments"
           layout="responsive"
           width={1511}
           height={1075}
           className={styles.backgroundImage}
-          placeholder="blur"
         />
       </div>
     </section>

@@ -21,12 +21,10 @@ export default function ArtificialIntelligence({
       <div className={styles.backgroundContainer}>
         <Image
           src="/images/artificial-intelligence.png"
-          blurDataURL="/images/artificial-intelligence.png"
           alt="Representation of the game's artificial intelligence"
           layout="fill"
           objectFit="scale-down"
           objectPosition="left"
-          placeholder="blur"
         />
       </div>
 

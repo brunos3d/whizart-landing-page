@@ -35,11 +35,9 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
       <div className={styles.backgroundContainer}>
         <Image
           src="/images/coins-and-tools.png"
-          blurDataURL="/images/coins-and-tools.png"
           alt="Painting showing brushes, gold coins, ink drops and flying papers"
           width={709}
           height={506}
-          placeholder="blur"
         />
       </div>
     </section>

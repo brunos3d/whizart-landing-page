@@ -25,11 +25,9 @@ export default function TeamMember({
         <div className={styles.avatarContainer}>
           <Image
             src={avatarUrl}
-            blurDataURL={avatarUrl}
             alt={`${name} Image`}
             width={512}
             height={512}
-            placeholder="blur"
           />
         </div>
         <h3 className={styles.name}>{name}</h3>
