@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 import { Container, Subtitle, Paragraph } from '@/components';
 
-import { WHITEPAPER_URL } from '@/data/urls';
+import { WHITEPAPER_IA_URL } from '@/data/urls';
 
 import pStyles from '@/components/Paragraph/styles.module.css';
 import styles from './styles.module.css';
@@ -44,7 +44,7 @@ export default function ArtificialIntelligence({
             <li className={pStyles.paragraph}>3. Paints</li>
           </ol>
 
-          <Button className={styles.cta} as="a" href={WHITEPAPER_URL}>
+          <Button className={styles.cta} as="a" href={WHITEPAPER_IA_URL}>
             Check the Whitepaper
           </Button>
         </div>
