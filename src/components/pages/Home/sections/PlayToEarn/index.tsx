@@ -20,13 +20,7 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
             Manage artists, workshops and paints to earn $WHIZ and contribute to
             the world of NFT Art..
           </Paragraph>
-          <Button
-            className={styles.cta}
-            as="a"
-            href={WHITEPAPER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Button className={styles.cta} as="a" href={WHITEPAPER_URL}>
             Read the Whitepaper
           </Button>
         </div>

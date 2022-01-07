@@ -44,13 +44,7 @@ export default function ArtificialIntelligence({
             <li className={pStyles.paragraph}>3. Paints</li>
           </ol>
 
-          <Button
-            className={styles.cta}
-            as="a"
-            href={WHITEPAPER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Button className={styles.cta} as="a" href={WHITEPAPER_URL}>
             Check the Whitepaper
           </Button>
         </div>
