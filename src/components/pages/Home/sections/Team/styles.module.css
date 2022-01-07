@@ -30,10 +30,6 @@
   align-items: center;
 }
 
-/* Extra small devices */
-@media (min-width: 320px) {
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .teamMembers {
@@ -62,8 +58,4 @@
     gap: 78px normal;
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }

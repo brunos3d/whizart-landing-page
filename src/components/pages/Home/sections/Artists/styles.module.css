@@ -30,10 +30,6 @@
   max-width: 320px;
 }
 
-/* Extra small devices */
-@media (min-width: 320px) {
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .cards {
@@ -51,12 +47,4 @@
   .section {
     padding: 109px 0;
   }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }
