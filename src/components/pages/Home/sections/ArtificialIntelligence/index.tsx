@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import { HTMLAttributes } from 'react';
-import { Button } from 'reakit/Button';
 import cn from 'classnames';
 
-import { Container, Subtitle, Paragraph } from '@/components';
+import { Container, Subtitle, Paragraph, LinkButton } from '@/components';
 
 import { WHITEPAPER_IA_URL } from '@/data/urls';
 
@@ -44,9 +43,9 @@ export default function ArtificialIntelligence({
             <li className={pStyles.paragraph}>3. Paints</li>
           </ol>
 
-          <Button className={styles.cta} as="a" href={WHITEPAPER_IA_URL}>
+          <LinkButton className={styles.cta} href={WHITEPAPER_IA_URL}>
             Check the Whitepaper
-          </Button>
+          </LinkButton>
         </div>
       </Container>
 

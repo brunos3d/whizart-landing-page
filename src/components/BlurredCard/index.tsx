@@ -1,8 +1,7 @@
 import { HTMLAttributes } from 'react';
-import { Button } from 'reakit/Button';
 import cn from 'classnames';
 
-import { Subtitle, Paragraph } from '@/components';
+import { Subtitle, Paragraph, LinkButton } from '@/components';
 
 import styles from './styles.module.css';
 
@@ -27,9 +26,9 @@ export default function BlurredCard({
       <Subtitle className={styles.title}>{title}</Subtitle>
       <Paragraph className={styles.description}>{description}</Paragraph>
       {cta && (
-        <Button className={styles.cta} as="a" href={cta.url}>
+        <LinkButton className={styles.cta} href={cta.url}>
           {cta.text}
-        </Button>
+        </LinkButton>
       )}
     </div>
   );

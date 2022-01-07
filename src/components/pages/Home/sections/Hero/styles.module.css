@@ -45,21 +45,9 @@
 }
 
 .cta {
-  background: #355b2b;
-  font-family: Kanit;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: var(--white);
   margin-top: 6.97vw;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 100%;
-  max-width: 472px;
-  border-radius: 5px;
+  color: var(--white);
+  background: var(--woodland);
 }
 
 .backgroundImage {

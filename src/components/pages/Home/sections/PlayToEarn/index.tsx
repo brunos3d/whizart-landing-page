@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import { HTMLAttributes } from 'react';
-import { Button } from 'reakit/Button';
 import cn from 'classnames';
 
 import { WHITEPAPER_URL } from '@/data/urls';
-import { Container, Subtitle, Paragraph } from '@/components';
+import { Container, Subtitle, Paragraph, LinkButton } from '@/components';
 
 import styles from './styles.module.css';
 
@@ -20,9 +19,9 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
             Manage artists, workshops and paints to earn $WHIZ and contribute to
             the world of NFT Art..
           </Paragraph>
-          <Button className={styles.cta} as="a" href={WHITEPAPER_URL}>
+          <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
             Read the Whitepaper
-          </Button>
+          </LinkButton>
         </div>
       </Container>
 

@@ -41,18 +41,7 @@
 }
 
 .cta {
-  width: 100%;
-  font-family: Kanit;
-  font-size: 24px;
-  line-height: 32px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: center;
   margin-top: 37px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-radius: 5px;
   color: var(--white);
   background: var(--coffee-bean);
 }
@@ -87,11 +76,6 @@
   .subtitle {
     font-size: 40px;
     line-height: 56px;
-  }
-
-  .cta {
-    font-size: 32px;
-    line-height: 48px;
   }
 }
 

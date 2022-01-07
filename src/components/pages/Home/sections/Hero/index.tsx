@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import { HTMLAttributes } from 'react';
-import { Button } from 'reakit/Button';
 import cn from 'classnames';
 
 import { WHITEPAPER_URL } from '@/data/urls';
 
-import { Container } from '@/components';
+import { Container, LinkButton } from '@/components';
 
 import styles from './styles.module.css';
 
@@ -21,9 +20,9 @@ export default function Hero({ className, ...rest }: HeroProps) {
             <p className={styles.description}>Mint NFT Art</p>
           </div>
 
-          <Button className={styles.cta} as="a" href={WHITEPAPER_URL}>
+          <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
             Read the Whitepaper
-          </Button>
+          </LinkButton>
         </div>
       </Container>
 
