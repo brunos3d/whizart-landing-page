@@ -6,6 +6,7 @@ import {
   Gameplay,
   Artists,
   ArtificialIntelligence,
+  Tokenomics,
   Team,
   Footer,
 } from './sections';
@@ -31,6 +32,8 @@ export default function Home() {
         <Artists id="nft" />
 
         <ArtificialIntelligence id="ai" />
+
+        <Tokenomics id="tokenomics" />
 
         <Team id="team" />
       </main>
