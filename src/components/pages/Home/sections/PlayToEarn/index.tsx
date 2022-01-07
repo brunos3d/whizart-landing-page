@@ -25,6 +25,16 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
         </div>
       </Container>
 
+      <div className={cn(styles.backgroundContainer, styles.mobile)}>
+        <Image
+          src="/images/coins-and-tools.png"
+          alt="Painting showing brushes, gold coins, ink drops and flying papers"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </div>
+
       <div className={styles.backgroundContainer}>
         <Image
           src="/images/coins-and-tools.png"
