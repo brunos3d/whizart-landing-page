@@ -49,6 +49,15 @@ export default function ArtificialIntelligence({
           </Button>
         </div>
       </Container>
+
+      <div className={cn(styles.backgroundContainer, styles.mobile)}>
+        <Image
+          src="/images/artificial-intelligence.png"
+          alt="Representation of the game's artificial intelligence"
+          width={838}
+          height={931}
+        />
+      </div>
     </section>
   );
 }
