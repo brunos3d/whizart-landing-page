@@ -23,33 +23,36 @@ export default function Navbar({ className, ...rest }: NavbarProps) {
             />
           </a>
         </Link>
-        <ul className={styles.navItems}>
-          <li className={styles.navItem}>
-            <Link href="#gameplay">
-              <a className={styles.navLink}>Gameplay</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#nft">
-              <a className={styles.navLink}>NFT</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#ai">
-              <a className={styles.navLink}>Artificial Intelligence</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#tokenomics">
-              <a className={styles.navLink}>Tokenomics</a>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="#team">
-              <a className={styles.navLink}>Team</a>
-            </Link>
-          </li>
-        </ul>
+
+        <div className={styles.navItemsSroll}>
+          <ul className={styles.navItems}>
+            <li className={styles.navItem}>
+              <Link href="#gameplay">
+                <a className={styles.navLink}>Gameplay</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#nft">
+                <a className={styles.navLink}>NFT</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#ai">
+                <a className={styles.navLink}>Artificial Intelligence</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#tokenomics">
+                <a className={styles.navLink}>Tokenomics</a>
+              </Link>
+            </li>
+            <li className={styles.navItem}>
+              <Link href="#team">
+                <a className={styles.navLink}>Team</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </Container>
     </nav>
   );
