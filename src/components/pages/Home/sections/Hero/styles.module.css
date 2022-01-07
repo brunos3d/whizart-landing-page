@@ -24,32 +24,84 @@
 
 .title {
   font-family: Kanit;
-  font-size: 64px;
+  font-size: 22px;
+  line-height: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 83px;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--coffee-bean);
 }
 
 .description {
+  display: none;
   font-family: Kanit;
   font-size: 40px;
+  line-height: 52px;
   font-style: normal;
   font-weight: 500;
-  line-height: 52px;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--coffee-bean);
 }
 
 .cta {
-  margin-top: 6.97vw;
+  width: calc(100% - 40px);
+  max-width: 405px;
+  margin: 0 20px;
+  position: absolute;
+  top: 40vw;
+  left: 50%;
+  transform: translateX(calc(-50% - 20px));
   color: var(--white);
   background: var(--woodland);
+  z-index: 1;
 }
 
 .backgroundImage {
   z-index: -10;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .title {
+    font-size: 56px;
+    line-height: 72px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .description {
+    display: unset;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .title {
+    font-size: 64px;
+    line-height: 83px;
+  }
+
+  .description {
+    font-size: 40px;
+    line-height: 52px;
+  }
 }

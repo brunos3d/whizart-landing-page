@@ -22,7 +22,7 @@ export default function Home() {
       <SocialBar className={styles.socialBar} />
 
       <main className={styles.main}>
-        {/* <Hero /> */}
+        <Hero />
 
         <PlayToEarn />
 
