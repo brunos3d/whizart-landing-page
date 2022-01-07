@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { HTMLAttributes } from 'react';
 import cn from 'classnames';
 
+import { WHITEPAPER_URL } from '@/data/urls';
 import { Container, BlurredCard } from '@/components';
 
 import styles from './styles.module.css';
@@ -16,7 +17,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
           <BlurredCard
             className={styles.card}
             title="Daily Commissions"
-            description="Players can do 2 Commissions per day to earn $WHIZ. Each Commission is an attempt to create an artwork. You will always earn $WHIZ for each attempt, but the Artist may not always be inspired to create something original, or anything at all!"
+            description="Players can do 2 Commissions per day to earn $WHIZ. Each Commission is an attempt to create an artwork. You will always earn $WHIZ for each attempt."
           />
 
           <BlurredCard
@@ -30,6 +31,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
             className={styles.card}
             title="Manage Artists"
             description="Collect, upgrade and trade Artists to create the perfect combination of inspiration for your original NFT Artwork."
+            cta={{ url: WHITEPAPER_URL, text: `Read the Whitepaper` }}
           />
         </div>
       </Container>

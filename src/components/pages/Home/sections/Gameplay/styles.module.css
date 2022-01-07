@@ -6,6 +6,7 @@
 
 .container {
   height: 100%;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -18,20 +19,48 @@
   justify-content: center;
 }
 
-.col + .col {
-  margin-left: 46px;
-}
-
 .card {
+  margin-top: 32px;
   max-width: 566px;
-}
-
-.card + .card {
-  margin-top: 46px;
 }
 
 .backgroundContainer {
   position: absolute;
   inset: 0;
   z-index: -1;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .col + .col {
+    margin-left: 46px;
+  }
+
+  .card {
+    margin-top: unset;
+  }
+
+  .card + .card {
+    margin-top: 46px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

@@ -14,10 +14,6 @@ export default function Artists({ className, ...rest }: ArtistsProps) {
       <Container className={styles.container}>
         <div className={styles.content}>
           <Subtitle className={styles.subtitle}>Artists</Subtitle>
-          <Paragraph className={styles.paragraph}>
-            Wide variety of NFTs, they will all lead in generating tokens and
-            creating your art.
-          </Paragraph>
         </div>
         <ul className={styles.cards}>
           <li className={styles.cardItem}>
