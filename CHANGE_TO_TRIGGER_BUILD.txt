@@ -1,0 +1,8 @@
+#########
+# This is a trigger file to deploy the application on Vercel
+# The only account able to modify this file is @webmasterwhizart
+# Perform a commit attaching the commit author being the webmaster to perform a new deploy for example
+# git commit -m "YOUR COMMIT MESSAGE" --allow-empty --author="webmaster@whizart.co"
+#########
+
+build: 3
