@@ -22,7 +22,7 @@ const members: TeamMemberProps[] = [
     socialUrl: `https://www.linkedin.com/in/f%C3%A1bio-cury-hirsch-99b52a83`,
   },
   {
-    name: `felipe Tanso`,
+    name: `Felipe Tanso`,
     bio: `Entrepreneur for 10 years, has won several technology awards in Brazil and around the world, including NASA's world competition: NASA space apps.`,
     avatarUrl: `/images/team/felipe-tanso.png`,
     socialUrl: `https://www.linkedin.com/in/felipetanso/`,
