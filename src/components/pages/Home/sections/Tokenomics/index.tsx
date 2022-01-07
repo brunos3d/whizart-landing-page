@@ -13,6 +13,10 @@ export default function Tokenomics({ className, ...rest }: TokenomicsProps) {
     <section className={cn(styles.section, className)} {...rest}>
       <Container className={styles.container}>
         <div className={styles.content}>
+          <Subtitle className={cn(styles.subtitle, styles.mobile)}>
+            Tokenomics
+          </Subtitle>
+
           <table className={styles.table}>
             <tbody className={styles.tbody}>
               <tr className={styles.trow}>
@@ -49,7 +53,7 @@ export default function Tokenomics({ className, ...rest }: TokenomicsProps) {
                 <td className={styles.tdata}>18 months vesting</td>
               </tr>
               <tr>
-                <td className={styles.tdata}>Partners/Advisor</td>
+                <td className={styles.tdata}>Partners / Advisor</td>
                 <td className={styles.tdata}>4%</td>
                 <td className={styles.tdata}>18 months vesting</td>
               </tr>
@@ -59,15 +63,17 @@ export default function Tokenomics({ className, ...rest }: TokenomicsProps) {
                 <td className={styles.tdata}>18 months vesting</td>
               </tr>
               <tr>
-                <td className={styles.tdata}>Marketing/Listing</td>
+                <td className={styles.tdata}>Marketing / Listing</td>
                 <td className={styles.tdata}>8%</td>
                 <td className={styles.tdata}>18 months vesting</td>
               </tr>
             </tbody>
           </table>
         </div>
+
         <div className={styles.backgroundContainer}>
           <Subtitle className={styles.subtitle}>Tokenomics</Subtitle>
+
           <Image
             src="/images/painting-frame.png"
             alt="Drawing of a painting frame"

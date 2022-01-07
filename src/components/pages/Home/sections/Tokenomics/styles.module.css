@@ -1,48 +1,43 @@
 .section {
   position: relative;
   width: 100%;
-  padding-top: 41px;
+  padding: 100px 0;
 }
 
 .content {
   width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: -10%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.subtitle {
-  position: absolute;
-  top: 5.7%;
-  left: 10.7%;
+.subtitle.mobile {
+  margin-bottom: 56px;
+}
+
+.subtitle:not(.mobile) {
+  display: none;
 }
 
 .table {
   width: 100%;
-  max-width: 627px;
   table-layout: fixed;
   border-collapse: collapse;
   border-style: hidden;
 }
 
 .tdata {
-  padding-top: 12px;
+  padding-top: 7px;
   font-family: Kanit;
-  font-size: 24px;
+  font-size: 14px;
+  line-height: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 36px;
   letter-spacing: -0.03em;
   text-align: right;
   color: var(--coffee-bean);
-  border: 3px solid var(--millbrook);
+  border: 1px solid var(--millbrook);
 }
 
 .tdata:first-child {
@@ -55,8 +50,8 @@
 }
 
 .backgroundContainer {
-  position: relative;
-  transform: translateX(10%);
+  z-index: -1;
+  display: none;
 }
 
 /* Extra small devices */
@@ -65,16 +60,84 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .tdata {
+    padding-top: 12px;
+    font-size: 20px;
+    line-height: 32px;
+    border: 3px solid var(--millbrook);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .section {
+    padding: unset;
+    padding-top: 41px;
+  }
+
+  .subtitle.mobile {
+    display: none;
+  }
+
+  .subtitle:not(.mobile) {
+    font-size: 32px;
+    display: unset;
+    position: absolute;
+    top: 5.7%;
+    left: 100px;
+  }
+
+  .content {
+    width: 100%;
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .table {
+    max-width: 64%;
+  }
+
+  .tdata {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .backgroundContainer {
+    display: unset;
+    position: relative;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .subtitle:not(.mobile) {
+    font-size: 48px;
+    left: 14.7%;
+  }
+
+  .table {
+    max-width: 627px;
+  }
+
+  .tdata {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .backgroundContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .subtitle:not(.mobile) {
+    left: 16.7%;
+  }
 }
