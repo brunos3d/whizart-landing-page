@@ -2,6 +2,12 @@ import Image from 'next/image';
 import { HTMLAttributes } from 'react';
 import cn from 'classnames';
 
+import {
+  DISCORD_INVITE_URL,
+  TELEGRAM_COMMUNITY_URL,
+  TWITTER_COMMUNITY_URL,
+} from '@/data/urls';
+
 import styles from './styles.module.css';
 
 export type SocialBarProps = HTMLAttributes<HTMLElement> & {
@@ -11,17 +17,17 @@ export type SocialBarProps = HTMLAttributes<HTMLElement> & {
 const social = [
   {
     network: `twitter`,
-    url: `https://twitter.com/`,
+    url: TWITTER_COMMUNITY_URL,
     iconUrl: `/logos/twitter.svg`,
   },
   {
     network: `discord`,
-    url: `https://discord.com/`,
+    url: DISCORD_INVITE_URL,
     iconUrl: `/logos/discord.svg`,
   },
   {
     network: `telegram`,
-    url: `https://telegram.com/`,
+    url: TELEGRAM_COMMUNITY_URL,
     iconUrl: `/logos/telegram.svg`,
   },
 ];
