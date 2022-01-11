@@ -6,7 +6,7 @@
 
 .container {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .logoContainer {
@@ -14,6 +14,7 @@
 }
 
 .navItemsSroll {
+  display: none;
   max-width: 100vw;
   overflow-x: scroll;
   scrollbar-width: thin;
@@ -57,5 +58,16 @@
   .navLink {
     font-size: 17px;
     line-height: 21px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .navItemsSroll {
+    display: unset;
   }
 }
