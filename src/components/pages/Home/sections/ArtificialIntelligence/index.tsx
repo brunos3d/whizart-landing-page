@@ -38,14 +38,34 @@ export default function ArtificialIntelligence({
           </Paragraph>
 
           <ol className={styles.iaInputs}>
-            <li className={pStyles.paragraph}>1. Artist</li>
-            <li className={pStyles.paragraph}>2. Workshop</li>
-            <li className={pStyles.paragraph}>3. Paints</li>
+            <li className={cn(styles.paragraph, pStyles.paragraph)}>
+              1. Artist
+            </li>
+            <li className={cn(styles.paragraph, pStyles.paragraph)}>
+              2. Workshop
+            </li>
+            <li className={cn(styles.paragraph, pStyles.paragraph)}>
+              3. Paints
+            </li>
           </ol>
 
           <LinkButton className={styles.cta} href={WHITEPAPER_IA_URL}>
             Check the Whitepaper
           </LinkButton>
+
+          <div className={styles.award}>
+            <Image
+              src="/logos/nasa.svg"
+              alt="NASA Logo"
+              width={151}
+              height={42}
+            />
+            <span className={styles.awardText}>
+              Award
+              <br />
+              Winning
+            </span>
+          </div>
         </div>
       </Container>
 

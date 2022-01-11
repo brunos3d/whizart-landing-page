@@ -13,9 +13,7 @@ export default function Tokenomics({ className, ...rest }: TokenomicsProps) {
     <section className={cn(styles.section, className)} {...rest}>
       <Container className={styles.container}>
         <div className={styles.content}>
-          <Subtitle className={cn(styles.subtitle, styles.mobile)}>
-            Tokenomics
-          </Subtitle>
+          <Subtitle className={styles.subtitle}>Tokenomics</Subtitle>
 
           <table className={styles.table}>
             <tbody className={styles.tbody}>
@@ -69,17 +67,6 @@ export default function Tokenomics({ className, ...rest }: TokenomicsProps) {
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <div className={styles.backgroundContainer}>
-          <Subtitle className={styles.subtitle}>Tokenomics</Subtitle>
-
-          <Image
-            src="/images/painting-frame.png"
-            alt="Drawing of a painting frame"
-            width={947}
-            height={1213}
-          />
         </div>
       </Container>
     </section>

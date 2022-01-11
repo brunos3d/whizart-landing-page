@@ -18,12 +18,12 @@ export default function Hero({ className, ...rest }: HeroProps) {
           <div className={styles.frameContent}>
             <h1 className={styles.title}>Play to Earn</h1>
             <p className={styles.description}>Mint NFT Art</p>
+
+            <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
+              Read the Whitepaper
+            </LinkButton>
           </div>
         </div>
-
-        <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
-          Read the Whitepaper
-        </LinkButton>
       </Container>
 
       <div className={styles.backgroundContainer}>

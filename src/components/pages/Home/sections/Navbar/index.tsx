@@ -18,8 +18,8 @@ export default function Navbar({ className, ...rest }: NavbarProps) {
             <Image
               src="/images/whizart-logo.png"
               alt="The WhizArt logo"
-              width={194}
-              height={53}
+              width={255}
+              height={96}
             />
           </a>
         </Link>

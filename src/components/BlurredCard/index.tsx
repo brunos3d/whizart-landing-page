@@ -23,13 +23,15 @@ export default function BlurredCard({
 }: BlurredCardProps) {
   return (
     <div className={cn(styles.card, className)} {...rest}>
-      <Subtitle className={styles.title}>{title}</Subtitle>
-      <Paragraph className={styles.description}>{description}</Paragraph>
-      {cta && (
-        <LinkButton className={styles.cta} href={cta.url}>
-          {cta.text}
-        </LinkButton>
-      )}
+      <div className={styles.content}>
+        <Subtitle className={styles.title}>{title}</Subtitle>
+        <Paragraph className={styles.description}>{description}</Paragraph>
+        {cta && (
+          <LinkButton className={styles.cta} href={cta.url}>
+            {cta.text}
+          </LinkButton>
+        )}
+      </div>
     </div>
   );
 }

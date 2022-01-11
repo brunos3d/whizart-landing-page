@@ -4,6 +4,7 @@
   background: var(--coral-reef);
   display: flex;
   flex-direction: column;
+  background-image: url(/images/old-paper-texture.jpg);
 }
 
 .container {
@@ -24,15 +25,17 @@
 }
 
 .subtitle {
+  margin-bottom: 28px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
   letter-spacing: -0.03em;
+  text-align: center;
   color: var(--el-paso);
 }
 
 .paragraph {
-  margin-top: 28px;
+  color: var(--jacko-bean);
 }
 
 .iaInputs {
@@ -44,6 +47,24 @@
   margin-top: 37px;
   color: var(--white);
   background: var(--coffee-bean);
+}
+
+.award {
+  width: 100%;
+  margin-top: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awardText {
+  margin-left: 22px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: left;
+  color: var(--coffee-bean);
 }
 
 .iaImage {

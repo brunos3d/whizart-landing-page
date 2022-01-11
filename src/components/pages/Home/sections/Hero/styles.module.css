@@ -46,16 +46,10 @@
 }
 
 .cta {
-  width: calc(100% - 40px);
-  max-width: 405px;
-  margin: 0 20px;
-  position: absolute;
-  top: 40vw;
-  left: 50%;
-  transform: translateX(calc(-50% - 20px));
+  max-width: 362px;
+  margin-top: 26px;
   color: var(--white);
   background: var(--woodland);
-  z-index: 1;
 }
 
 .backgroundImage {

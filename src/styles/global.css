@@ -12,7 +12,7 @@
   --jacko-bean: #282105;
   --millbrook: #533d2d;
   --taupe-gray: #b2ab90;
-  --background: #000;
+  --crowshead: #1e1108;
   --scrollbar: var(--coffee-bean);
   --scrollbar-background: var(--white);
 }
@@ -59,8 +59,8 @@ body {
 }
 
 html {
-  color: var(--text);
-  background: var(--derby);
+  color: var(--white);
+  background: var(--coffee-bean);
 }
 
 body {
