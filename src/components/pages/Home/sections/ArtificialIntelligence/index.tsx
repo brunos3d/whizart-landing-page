@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import { Container, Subtitle, Paragraph, LinkButton } from '@/components';
 
-import { WHITEPAPER_IA_URL } from '@/data/urls';
+import { NASA_PROJECT_AWARD, WHITEPAPER_IA_URL } from '@/data/urls';
 
 import pStyles from '@/components/Paragraph/styles.module.css';
 import styles from './styles.module.css';
@@ -53,7 +53,12 @@ export default function ArtificialIntelligence({
             Check the Whitepaper
           </LinkButton>
 
-          <div className={styles.award}>
+          <a
+            className={styles.award}
+            href={NASA_PROJECT_AWARD}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/logos/nasa.svg"
               alt="NASA Logo"
@@ -65,7 +70,7 @@ export default function ArtificialIntelligence({
               <br />
               Winning
             </span>
-          </div>
+          </a>
         </div>
       </Container>
 
