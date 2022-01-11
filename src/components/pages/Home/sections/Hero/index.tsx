@@ -20,7 +20,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
             <p className={styles.description}>Mint NFT Art</p>
 
             <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
-              Read the Whitepaper
+              <span className={styles.ctaFullText}>Read the</span> Whitepaper
             </LinkButton>
           </div>
         </div>
