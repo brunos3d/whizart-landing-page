@@ -31,8 +31,8 @@ export default function Hero({ className, ...rest }: HeroProps) {
           src="/images/main-art.png"
           alt="Painting showing game artists in their respective environments"
           layout="responsive"
-          width={1511}
-          height={1075}
+          width={1440}
+          height={808}
           className={styles.backgroundImage}
         />
       </div>
