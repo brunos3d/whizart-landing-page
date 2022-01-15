@@ -82,6 +82,10 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .section {
+    min-height: 808px;
+  }
+
   .content {
     top: 127.6px;
     left: calc(50% - 174px);
