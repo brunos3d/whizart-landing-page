@@ -1,7 +1,7 @@
 .section {
   position: relative;
   overflow: hidden;
-  min-height: 808px;
+  min-height: 575px;
 }
 
 .content {
@@ -79,6 +79,7 @@
     display: unset;
   }
 }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .content {
