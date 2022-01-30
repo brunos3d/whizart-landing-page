@@ -40,12 +40,6 @@ const members: TeamMemberProps[] = [
     socialUrl: `https://www.linkedin.com/in/anajuliabit/`,
   },
   {
-    name: `Henrique Trawitzki`,
-    bio: `Content editor, SEO strategist and lifetime gamer. Co-founder of Binance Academy, Henrique has been working as a content writer and editor in the crypto space since 2017.`,
-    avatarUrl: `/images/team/henrique-trawitzki.png`,
-    socialUrl: `https://www.linkedin.com/in/henrique-t-aa9390152/`,
-  },
-  {
     name: `Pedro Kranz`,
     bio: `Director of branding and growth in Rappi Bank. Co-founded many companies, including Peixe Urbano, one of the most successful Brazilian startups.`,
     avatarUrl: `/images/team/pedro-kranz.png`,
@@ -74,6 +68,12 @@ const members: TeamMemberProps[] = [
     bio: `Designer and member of the Innovation team at Alpargatas, the world's largest open shoe company. Érica is an award winning professional in both illustration and shoemaking.`,
     avatarUrl: `/images/team/erica-sena.png`,
     socialUrl: `https://www.linkedin.com/in/erica-sena/`,
+  },
+  {
+    name: `Travis`,
+    bio: `Content editor, SEO strategist and lifetime gamer. Co-founder of Binance Academy, Travis has been working as a content writer and editor in the crypto space since 2017.`,
+    avatarUrl: `/images/team/travis.jpeg`,
+    // socialUrl: `https://www.linkedin.com/in/henrique-t-aa9390152/`,
   },
 ];
 
