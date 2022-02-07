@@ -41,7 +41,7 @@ const members: TeamMemberProps[] = [
   },
   {
     name: `Pedro Kranz`,
-    bio: `Director of branding and growth in Rappi Bank. Co-founded many companies, including Peixe Urbano, one of the most successful Brazilian startups.`,
+    bio: `PK has been leading as chief of growth for major companies in Brazil for the past 10 years. PK was also part of the founding team in PeixeUrbano and co-founder of Network Brasil, launching successful channels like Desimpedidos.`,
     avatarUrl: `/images/team/pedro-kranz.png`,
     socialUrl: `https://www.linkedin.com/in/pedrokcosta/`,
   },
