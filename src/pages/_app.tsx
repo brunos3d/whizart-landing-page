@@ -3,6 +3,8 @@ import '@/styles/global.css';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
+declare const window: any;
+
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
