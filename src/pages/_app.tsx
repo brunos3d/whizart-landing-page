@@ -1,7 +1,9 @@
-import { AppProps } from 'next/app';
-import '@/styles/global.css';
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
+
+import 'swiper/swiper.min.css';
+import '@/styles/global.css';
 
 declare const window: any;
 

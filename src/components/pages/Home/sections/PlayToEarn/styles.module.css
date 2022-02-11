@@ -1,0 +1,59 @@
+.section {
+  position: relative;
+  min-height: 432px;
+  background: url(/images/backgrounds/coins-blurred-bkg.png);
+  background-size: 100%;
+  /* section inset shadow  */
+  box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+.frame {
+  width: 100%;
+  min-height: 365px;
+  padding: 0 72px;
+  padding-right: 104px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(/images/backgrounds/3d-frame.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.headline,
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.subtitle {
+  margin-top: 24px;
+}
+
+.features {
+  list-style: none;
+}
+
+.feature {
+  display: flex;
+  margin-top: 8px;
+}
+
+.featText {
+  margin-left: 16px;
+}
+
+.cta {
+  margin-top: 33px;
+  max-width: 212px;
+}

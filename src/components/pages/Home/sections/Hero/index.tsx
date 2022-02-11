@@ -29,7 +29,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
         <div className={styles.content}>
           <Badge className={styles.badge}>Coming Soon</Badge>
 
-          <Scene duration={75} indicators={true} triggerHook={0}>
+          <Scene offset={-30} duration={50} indicators={false} triggerHook={0}>
             {(progress: number) => (
               <h1
                 className={styles.title}
@@ -43,6 +43,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
                   alt="WhizArt"
                   width="485"
                   height="140"
+                  quality={100}
                 />
               </h1>
             )}
@@ -71,9 +72,9 @@ export default function Hero({ className, ...rest }: HeroProps) {
             <LinkButton
               className={styles.cta}
               variant="secondary"
-              href={WHITEPAPER_URL}
+              href="/#community"
             >
-              Whitepaper
+              Community
             </LinkButton>
           </div>
 
@@ -93,7 +94,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
         </div>
       </Container>
 
-      <Scene offset={60} duration={300} indicators={true} triggerHook={0.5}>
+      <Scene offset={60} duration={300} indicators={false} triggerHook={0.5}>
         {(progress: number) => (
           <div>
             <div
@@ -110,6 +111,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
                 width="1216"
                 height="648"
                 objectFit="scale-down"
+                quality={80}
               />
               <div
                 className={styles.daVinciContainer}
@@ -118,13 +120,17 @@ export default function Hero({ className, ...rest }: HeroProps) {
                   transform: `translateZ(${(1 - progress) * 100}px) rotateX(-${
                     (1 - progress) * 45
                   }deg)`,
+                  filter: `drop-shadow(0px ${(1 - progress) * 100}px ${
+                    (1 - progress) * 20
+                  }px rgba(0, 0, 0, ${(1 - progress) * 0.5}))`,
                 }}
               >
                 <Image
-                  src="/images/da-vinci.png"
+                  src="/images/animated/da-vinci.gif"
                   alt="WhizArt"
                   width="389"
                   height="236"
+                  quality={80}
                 />
               </div>
             </div>

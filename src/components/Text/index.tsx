@@ -4,7 +4,7 @@ import cn from 'classnames';
 import styles from './styles.module.css';
 
 export type TextProps = HTMLAttributes<HTMLElement> & {
-  as: keyof JSX.IntrinsicElements;
+  as?: keyof JSX.IntrinsicElements;
 };
 
 export default function Text({ as = `p`, className, ...rest }: TextProps) {
