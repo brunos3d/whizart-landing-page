@@ -24,12 +24,13 @@ export default class MyDocument extends Document<DocumentProps> {
           />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Kanit:wght@400;500;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Rowdies:wght@300;400;700&display=swap"
             rel="stylesheet"
           />
 
           <link rel="icon" href="/favicon.ico" />
 
+          {/* eslint-disable-next-line @next/next/next-script-for-ga */}
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-74BBJVB6ZD"

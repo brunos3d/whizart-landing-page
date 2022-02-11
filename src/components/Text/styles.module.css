@@ -1,0 +1,22 @@
+.text {
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--white);
+}
+
+.text a {
+  text-decoration: underline;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

@@ -4,8 +4,6 @@ export const TELEGRAM_COMMUNITY_URL = `https://telegram.com/`;
 
 export const TWITTER_COMMUNITY_URL = `https://twitter.com/`;
 
-export const WHITEPAPER_URL = `https://elton-soares.gitbook.io/whizart/`;
-
-export const WHITEPAPER_IA_URL = `https://elton-soares.gitbook.io/whizart/whizzy-artificial-intelligence`;
+export const WHITEPAPER_URL = `https://whitepaper.whizart.co/`;
 
 export const NASA_PROJECT_AWARD = `https://2021.spaceappschallenge.org/challenges/statements/artfully-illuminated-asteroids/teams/artai/project`;

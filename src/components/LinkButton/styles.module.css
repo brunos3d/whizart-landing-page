@@ -1,31 +1,26 @@
 .button {
   width: 100%;
-  font-family: Kanit;
-  font-size: 18px;
-  line-height: 28px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
   border-radius: 5px;
-  color: var(--black);
-  background: var(--white);
+
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .button {
-    font-size: 20px;
-    line-height: 32px;
-  }
+.button.primary {
+  color: var(--cioccolato);
+  background: var(--gold);
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .button {
-    font-size: 24px;
-    line-height: 35px;
-  }
+.button.secondary {
+  background: none;
+  color: var(--cioccolato);
+  border: 1px solid var(--cioccolato);
 }
