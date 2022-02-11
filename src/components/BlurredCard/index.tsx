@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 import cn from 'classnames';
 
-import { Subtitle, Paragraph, LinkButton } from '@/components';
+import { Subtitle, Text, LinkButton } from '@/components';
 
 import styles from './styles.module.css';
 
@@ -25,7 +25,7 @@ export default function BlurredCard({
     <div className={cn(styles.card, className)} {...rest}>
       <div className={styles.content}>
         <Subtitle className={styles.title}>{title}</Subtitle>
-        <Paragraph className={styles.description}>{description}</Paragraph>
+        <Text className={styles.description}>{description}</Text>
         {cta && (
           <LinkButton className={styles.cta} href={cta.url}>
             {cta.text}
