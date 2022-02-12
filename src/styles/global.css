@@ -1,15 +1,17 @@
 :root {
   --white: #fff;
   --black: #000;
+  --blue: #0b80ff;
+  --gold: #f9d100;
   --solitude: #e6f2ff;
   --dawn-pink: #eee5dd;
   --champagne: #f9ead3;
   --spicy-mix: #7a583f;
   --old-copper: #7d5833;
   --cioccolato: #5c3209;
-  --gold: #f9d100;
   --scrollbar: var(--black);
   --scrollbar-background: var(--white);
+  --swiper-theme-color: var(--blue);
 }
 
 * {

@@ -4,14 +4,12 @@ import Image from 'next/image';
 import cn from 'classnames';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectCards } from 'swiper';
+import { EffectCards } from 'swiper';
 
 import { WHITEPAPER_URL } from '@/data/urls';
 import { Container, Subtitle, Text, LinkButton } from '@/components';
 
 import styles from './styles.module.css';
-
-SwiperCore.use([EffectCards]);
 
 export type GameplayProps = HTMLAttributes<HTMLElement>;
 
@@ -158,7 +156,12 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
               </LinkButton>
             </div>
             <div className={styles.featMedia}>
-              <Swiper effect="cards" grabCursor className={styles.swiper}>
+              <Swiper
+                effect="cards"
+                grabCursor
+                modules={[EffectCards]}
+                className={styles.swiper}
+              >
                 {cards.map(({ name, url, width, height }) => (
                   <SwiperSlide className={styles.slide} key={name}>
                     <Image

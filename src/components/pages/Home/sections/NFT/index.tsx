@@ -1,4 +1,4 @@
-import { HTMLAttributes, useEffect } from 'react';
+import { HTMLAttributes } from 'react';
 import Image from 'next/image';
 import cn from 'classnames';
 import {
@@ -7,10 +7,17 @@ import {
   DisclosureContent,
 } from 'reakit/Disclosure';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCreative, Grid, Navigation, Pagination } from 'swiper';
+
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { WHITEPAPER_URL } from '@/data/urls';
 import { Container, LinkButton, Subtitle, Text } from '@/components';
 
 import styles from './styles.module.css';
-import { WHITEPAPER_URL } from '@/data/urls';
 
 export type NFTProps = HTMLAttributes<HTMLElement>;
 
@@ -32,6 +39,27 @@ const cards = [
     url: `/images/cards/marketplace/whizsky.png`,
     width: `159`,
     height: `229`,
+  },
+];
+
+const workshops = [
+  {
+    name: `Garden`,
+    url: `/images/workshops/garden.png`,
+    width: `592`,
+    height: `340`,
+  },
+  {
+    name: `Office`,
+    url: `/images/workshops/office.png`,
+    width: `592`,
+    height: `340`,
+  },
+  {
+    name: `Circuit`,
+    url: `/images/workshops/circuit.png`,
+    width: `592`,
+    height: `340`,
   },
 ];
 
@@ -70,14 +98,14 @@ export default function NFT({ className, ...rest }: NFTProps) {
           </div>
         </div>
 
-        <div
-          className={cn(styles.entities, {
-            [styles.start]: dArtists.visible,
-            [styles.middle]: dWorkshop.visible,
-            [styles.end]: dPaints.visible,
-          })}
-        >
-          <div className={styles.tabMenu}>
+        <div className={styles.entities}>
+          <div
+            className={cn(styles.tabMenu, {
+              [styles.start]: dArtists.visible,
+              [styles.middle]: dWorkshop.visible,
+              [styles.end]: dPaints.visible,
+            })}
+          >
             <Disclosure
               className={styles.dButton}
               {...dArtists}
@@ -146,16 +174,78 @@ export default function NFT({ className, ...rest }: NFTProps) {
           </div>
           <div className={styles.tabPanel}>
             <DisclosureContent className={styles.dPanelContent} {...dArtists}>
-              <span>dArtists</span>
+              <Swiper
+                grabCursor
+                slidesPerView={3}
+                grid={{
+                  rows: 2,
+                  fill: `row`,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }}
+                modules={[Autoplay, Grid, Navigation, Pagination]}
+                className={styles.artistsSwiper}
+              >
+                {new Array(9).fill(0).map((_, index) => (
+                  <SwiperSlide
+                    className={styles.artistsSlide}
+                    key={index.toString()}
+                  >
+                    <Image
+                      src={`/images/artists/${index + 1}.png`}
+                      alt={`Artist ${index + 1}`}
+                      width="110"
+                      height="192"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </DisclosureContent>
 
             <DisclosureContent className={styles.dPanelContent} {...dWorkshop}>
-              <span>dWorkshop</span>
+              <Swiper
+                spaceBetween={30}
+                loop
+                grabCursor
+                navigation
+                centeredSlides
+                effect="creative"
+                creativeEffect={{
+                  prev: {
+                    translate: [0, 0, -400],
+                  },
+                  next: {
+                    translate: [`100%`, 0, 0],
+                  },
+                }}
+                autoplay={{
+                  delay: 2000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Autoplay, EffectCreative, Navigation, Pagination]}
+                className={styles.swiper}
+              >
+                {workshops.map(({ name, url, width, height }) => (
+                  <SwiperSlide className={styles.slide} key={name}>
+                    <Image src={url} alt={name} width={width} height={height} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </DisclosureContent>
 
-            <DisclosureContent className={styles.dPanelContent} {...dPaints}>
+            {/* <DisclosureContent className={styles.dPanelContent} {...dPaints}>
               <span>dPaints</span>
-            </DisclosureContent>
+            </DisclosureContent> */}
           </div>
         </div>
       </Container>

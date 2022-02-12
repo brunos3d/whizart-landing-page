@@ -56,13 +56,21 @@
   width: 100%;
   min-height: 437px;
   margin-top: 160px;
-  padding-left: 32px;
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
-.entities:before {
+.tabMenu {
+  width: 100%;
+  height: min-content;
+  max-width: 453px;
+  padding-left: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabMenu:before {
   content: '';
   position: absolute;
   top: 0;
@@ -72,7 +80,7 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-.entities:after {
+.tabMenu:after {
   content: '';
   position: absolute;
   top: 0;
@@ -83,29 +91,21 @@
   transition: 0.3s all ease-in-out;
 }
 
-.entities.start:after {
+.tabMenu.start:after {
   transform: translateY(0%);
 }
 
-.entities.middle:after {
+.tabMenu.middle:after {
   transform: translateY(100%);
 }
 
-.entities.end:after {
+.tabMenu.end:after {
   transform: translateY(200%);
-}
-
-.tabMenu {
-  width: 100%;
-  max-width: 453px;
-  display: flex;
-  flex-direction: column;
 }
 
 .tabPanel {
   width: 100%;
   max-width: 592px;
-  background: red;
 }
 
 .dButton {
@@ -130,4 +130,8 @@
 .dCta {
   max-width: 215px;
   margin-top: 24px;
+}
+
+.artistsSwiper {
+  min-height: 384px;
 }

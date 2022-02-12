@@ -3,13 +3,11 @@ import Image from 'next/image';
 import cn from 'classnames';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
 
 import { Container, Subtitle } from '@/components';
 
 import styles from './styles.module.css';
-
-SwiperCore.use([Autoplay]);
 
 export type PartnersProps = HTMLAttributes<HTMLElement>;
 
@@ -43,10 +41,12 @@ export default function Partners({ className, ...rest }: PartnersProps) {
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
             pagination={{
               clickable: true,
             }}
+            modules={[Autoplay]}
             className={styles.swiper}
           >
             {partners.map(({ name, url, width, height }) => (
