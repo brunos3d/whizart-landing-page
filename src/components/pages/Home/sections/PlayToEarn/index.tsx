@@ -50,7 +50,12 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
                     </li>
                   ))}
                 </ul>
-                <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
+                <LinkButton
+                  className={styles.cta}
+                  href={WHITEPAPER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Read Whitepaper
                 </LinkButton>
               </div>

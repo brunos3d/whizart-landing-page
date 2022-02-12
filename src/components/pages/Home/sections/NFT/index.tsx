@@ -123,7 +123,12 @@ export default function NFT({ className, ...rest }: NFTProps) {
                 are rarer and have higher creativity earn more $WHIZ and have
                 better chances of generating a unique artwork.
               </Text>
-              <LinkButton className={styles.dCta} href={WHITEPAPER_URL}>
+              <LinkButton
+                className={styles.dCta}
+                href={WHITEPAPER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read Whitepaper
               </LinkButton>
             </DisclosureContent>
@@ -147,7 +152,12 @@ export default function NFT({ className, ...rest }: NFTProps) {
                 Workshops can be used by the player or rented out to other
                 players.
               </Text>
-              <LinkButton className={styles.dCta} href={WHITEPAPER_URL}>
+              <LinkButton
+                className={styles.dCta}
+                href={WHITEPAPER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read Whitepaper
               </LinkButton>
             </DisclosureContent>
@@ -167,7 +177,12 @@ export default function NFT({ className, ...rest }: NFTProps) {
               <Text className={styles.dDescription} variant="small">
                 Work in progress...
               </Text>
-              <LinkButton className={styles.dCta} href={WHITEPAPER_URL}>
+              <LinkButton
+                className={styles.dCta}
+                href={WHITEPAPER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read Whitepaper
               </LinkButton>
             </DisclosureContent>
@@ -186,7 +201,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
                   clickable: true,
                 }}
                 autoplay={{
-                  delay: 2000,
+                  delay: 1500,
                   disableOnInteraction: false,
                   pauseOnMouseEnter: true,
                 }}
@@ -227,7 +242,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
                   },
                 }}
                 autoplay={{
-                  delay: 2000,
+                  delay: 1500,
                   disableOnInteraction: false,
                   pauseOnMouseEnter: true,
                 }}

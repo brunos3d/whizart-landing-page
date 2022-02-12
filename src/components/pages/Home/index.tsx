@@ -1,7 +1,15 @@
 import { Controller, Scene } from 'react-scrollmagic';
 
 import { SEO, Navbar } from '@/components';
-import { Hero, Team, Partners, PlayToEarn, Gameplay, NFT } from './sections';
+import {
+  Hero,
+  Team,
+  Partners,
+  PlayToEarn,
+  Gameplay,
+  NFT,
+  ArtificialIntelligence,
+} from './sections';
 
 import styles from './styles.module.css';
 
@@ -30,6 +38,8 @@ export default function Home() {
         <Gameplay id="gameplay" />
 
         <NFT id="nft" />
+
+        <ArtificialIntelligence id="artificial-intelligence" />
 
         <Team id="team" />
       </main>

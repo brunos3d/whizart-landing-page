@@ -151,7 +151,12 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
                 combination of inspiration for your original NFT Artwork.
               </Text>
 
-              <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
+              <LinkButton
+                className={styles.cta}
+                href={WHITEPAPER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read Whitepaper
               </LinkButton>
             </div>

@@ -66,7 +66,12 @@ export default function Hero({ className, ...rest }: HeroProps) {
           </Text>
 
           <div className={styles.ctas}>
-            <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
+            <LinkButton
+              className={styles.cta}
+              href={WHITEPAPER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Whitepaper
             </LinkButton>
             <LinkButton

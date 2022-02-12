@@ -41,6 +41,8 @@ export default function Navbar({ className, ...rest }: NavbarProps) {
               className={styles.cta}
               variant="secondary"
               href={WHITEPAPER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Whitepaper
             </LinkButton>

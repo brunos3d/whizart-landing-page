@@ -14,15 +14,27 @@ export type PartnersProps = HTMLAttributes<HTMLElement>;
 const partners = [
   {
     name: `Jade Labs`,
-    url: `/logos/jade-labs.png`,
+    url: `/logos/partners/jade-labs.png`,
     width: `184`,
     height: `32`,
   },
   {
     name: `BFRI`,
-    url: `/logos/bfri.png`,
+    url: `/logos/partners/bfri.png`,
     width: `120`,
     height: `84`,
+  },
+  {
+    name: `Binance Smart Chain`,
+    url: `/logos/partners/binance-smart-chain.png`,
+    width: `204`,
+    height: `60`,
+  },
+  {
+    name: `Amazon Web Services`,
+    url: `/logos/partners/amazon-web-services.png`,
+    width: `191`,
+    height: `63`,
   },
 ];
 

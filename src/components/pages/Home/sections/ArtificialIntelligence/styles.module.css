@@ -1,0 +1,120 @@
+.section {
+  position: relative;
+  min-height: 1024px;
+  padding-top: 160px;
+  padding-bottom: 180px;
+  background: url(/images/backgrounds/light-beige.png);
+  background-size: 100%;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.headline {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.description {
+  max-width: 450px;
+  margin-top: 16px;
+  color: var(--old-copper);
+}
+
+.nasaLink {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.nasaLink > * {
+  margin-left: 24px;
+}
+
+.nasaText {
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--cola);
+}
+
+.tabMenu {
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabList {
+  width: 100%;
+  max-width: 728px;
+  padding-bottom: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabList:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tabList:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33%;
+  height: 3px;
+  background: var(--gold);
+  transition: 0.3s all ease-in-out;
+}
+
+.tabList.start:after {
+  transform: translateX(0%);
+}
+
+.tabList.middle:after {
+  transform: translateX(100%);
+}
+
+.tabList.end:after {
+  transform: translateX(200%);
+}
+
+.tab {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: none;
+}
+
+.tab .subtitle {
+  width: 100%;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.chevron {
+  min-width: 24px;
+  min-height: 24px;
+}
