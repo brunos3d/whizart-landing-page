@@ -39,6 +39,7 @@ export default function Partners({ className, ...rest }: PartnersProps) {
             spaceBetween={30}
             loop
             centeredSlides
+            grabCursor
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,

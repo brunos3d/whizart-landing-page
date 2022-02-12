@@ -18,14 +18,13 @@ const features = [
 
 export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
   return (
-    <Scene duration="100%" triggerHook="onEnter" indicators={true}>
+    <Scene duration="100%" triggerHook="onEnter" indicators={false}>
       {(progress: number) => (
         <section
           className={cn(styles.section, className)}
           style={{ backgroundPositionY: `${100 - progress * 100}%` }}
           {...rest}
         >
-          <h1>{progress}</h1>
           <Container className={styles.container}>
             <div className={styles.frame}>
               <div className={styles.headline}>

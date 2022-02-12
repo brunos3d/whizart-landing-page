@@ -1,0 +1,133 @@
+.section {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  bottom: -27px;
+  left: 0;
+  right: 0;
+  background: url(/images/backgrounds/brush-strokes-ripped.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.headline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  max-width: 520px;
+  display: flex;
+}
+
+.card + .card {
+  margin-left: 20px;
+}
+
+.content {
+  max-width: 592px;
+}
+
+.subtitle {
+  margin-top: 24px;
+  color: var(--white);
+}
+
+.description {
+  color: var(--dawn-pink);
+}
+
+.entities {
+  width: 100%;
+  min-height: 437px;
+  margin-top: 160px;
+  padding-left: 32px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entities:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 1px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.entities:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 33%;
+  width: 3px;
+  background: var(--gold);
+  transition: 0.3s all ease-in-out;
+}
+
+.entities.start:after {
+  transform: translateY(0%);
+}
+
+.entities.middle:after {
+  transform: translateY(100%);
+}
+
+.entities.end:after {
+  transform: translateY(200%);
+}
+
+.tabMenu {
+  width: 100%;
+  max-width: 453px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabPanel {
+  width: 100%;
+  max-width: 592px;
+  background: red;
+}
+
+.dButton {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.dButton:not(:first-child) {
+  margin-top: 40px;
+}
+
+.dButton h5 {
+  color: var(--white);
+}
+
+.dDescription {
+  margin-top: 16px;
+  color: var(--dawn-pink);
+}
+
+.dCta {
+  max-width: 215px;
+  margin-top: 24px;
+}

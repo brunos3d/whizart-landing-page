@@ -1,18 +1,25 @@
 .section {
   position: relative;
   height: 100%;
-  min-height: 854px;
+  min-height: 720px;
   padding-top: 28px;
-  padding-bottom: 196px;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url(/images/backgrounds/brush-strokes.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  z-index: 1;
 }
 
-.container {
+.section::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  bottom: -27px;
+  left: 0;
+  right: 0;
+  background: url(/images/backgrounds/brush-strokes.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .frame {
@@ -24,18 +31,19 @@
   background: url(/images/backgrounds/basic-frame.png);
   background-size: 100%;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 48px;
+  line-height: 60px;
 }
 
 .swiper {
   width: 100%;
   max-width: 568px;
   position: relative;
-  cursor: grab;
   user-select: none;
-}
-
-.swiper:active {
-  cursor: grabbing;
 }
 
 .swiper:after {
@@ -48,6 +56,7 @@
   box-shadow: inset 25px 0px 10px -5px rgb(250, 232, 209),
     inset -25px 0px 10px -5px rgb(255, 239, 219);
   z-index: 1;
+  pointer-events: none;
 }
 
 .slide {

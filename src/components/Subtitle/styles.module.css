@@ -18,8 +18,8 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .subtitle {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 64px;
+    line-height: 79px;
   }
 
   .h4 {
