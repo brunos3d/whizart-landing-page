@@ -133,5 +133,9 @@
 }
 
 .artistsSwiper {
-  min-height: 384px;
+  min-height: 418px;
+}
+
+.workshopSwiper {
+  min-height: 380px;
 }

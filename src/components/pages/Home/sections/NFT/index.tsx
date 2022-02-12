@@ -176,6 +176,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
             <DisclosureContent className={styles.dPanelContent} {...dArtists}>
               <Swiper
                 grabCursor
+                navigation
                 slidesPerView={3}
                 grid={{
                   rows: 2,
@@ -202,6 +203,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
                       alt={`Artist ${index + 1}`}
                       width="110"
                       height="192"
+                      objectFit="contain"
                     />
                   </SwiperSlide>
                 ))}
@@ -233,10 +235,10 @@ export default function NFT({ className, ...rest }: NFTProps) {
                   clickable: true,
                 }}
                 modules={[Autoplay, EffectCreative, Navigation, Pagination]}
-                className={styles.swiper}
+                className={styles.workshopSwiper}
               >
                 {workshops.map(({ name, url, width, height }) => (
-                  <SwiperSlide className={styles.slide} key={name}>
+                  <SwiperSlide className={styles.workshopSlide} key={name}>
                     <Image src={url} alt={name} width={width} height={height} />
                   </SwiperSlide>
                 ))}
