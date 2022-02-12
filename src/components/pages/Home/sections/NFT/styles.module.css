@@ -10,8 +10,8 @@
 .section::before {
   content: '';
   position: absolute;
-  top: -20px;
-  bottom: -27px;
+  top: -36px;
+  bottom: -36px;
   left: 0;
   right: 0;
   background: url(/images/backgrounds/brush-strokes-ripped.png);
