@@ -191,9 +191,9 @@ export default function NFT({ className, ...rest }: NFTProps) {
             <DisclosureContent className={styles.dPanelContent} {...dArtists}>
               <Swiper
                 grabCursor
-                slidesPerView={3}
+                slidesPerView={2}
                 grid={{
-                  rows: 2,
+                  rows: 1,
                   fill: `row`,
                 }}
                 pagination={{
@@ -204,6 +204,27 @@ export default function NFT({ className, ...rest }: NFTProps) {
                   disableOnInteraction: false,
                   pauseOnMouseEnter: true,
                 }}
+                breakpoints={
+                  process.env.NODE_ENV === `production`
+                    ? {
+                        320: {
+                          grid: { rows: 1, fill: `row` },
+                          slidesPerView: 3,
+                        },
+                        576: {
+                          slidesPerView: 4,
+                        },
+                        768: {
+                          grid: { rows: 2, fill: `row` },
+                          slidesPerView: 4,
+                        },
+                        992: {
+                          grid: { rows: 2, fill: `row` },
+                          slidesPerView: 3,
+                        },
+                      }
+                    : {}
+                }
                 modules={[Autoplay, Grid, Navigation, Pagination]}
                 className={styles.artistsSwiper}
               >

@@ -25,10 +25,13 @@
 .headline {
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   justify-content: space-between;
 }
 
 .cards {
+  margin-top: 36px;
   max-width: 520px;
   display: flex;
 }
@@ -39,15 +42,19 @@
 
 .content {
   max-width: 592px;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtitle {
   margin-top: 24px;
   color: var(--white);
+  text-align: center;
 }
 
 .description {
   color: var(--dawn-pink);
+  text-align: center;
 }
 
 .entities {
@@ -55,6 +62,7 @@
   min-height: 437px;
   margin-top: 80px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -103,7 +111,7 @@
 
 .tabPanel {
   width: 100%;
-  max-width: 592px;
+  margin-top: 36px;
 }
 
 .dButton {
@@ -126,14 +134,70 @@
 }
 
 .dCta {
-  max-width: 215px;
   margin-top: 24px;
 }
 
 .artistsSwiper {
-  min-height: 418px;
+  min-height: 224px;
 }
 
 .workshopSwiper {
-  min-height: 380px;
+  min-height: 60vw;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .artistsSwiper {
+    min-height: 418px;
+  }
+
+  .workshopSwiper {
+    min-height: 390px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .entities {
+    flex-direction: row;
+  }
+
+  .tabPanel {
+    max-width: 592px;
+  }
+
+  .dCta {
+    max-width: 215px;
+  }
+
+  .workshopSwiper {
+    min-height: 380px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cards {
+    margin-top: unset;
+  }
+
+  .headline {
+    flex-direction: row;
+  }
+
+  .content {
+    align-items: flex-start;
+  }
+  .description,
+  .subtitle {
+    text-align: left;
+  }
 }
