@@ -1,8 +1,8 @@
 export const DISCORD_INVITE_URL = `https://discord.gg/tsQTxN6GHM`;
 
-export const TELEGRAM_COMMUNITY_URL = `https://telegram.com/`;
+export const TELEGRAM_COMMUNITY_URL = `https://t.me/+eM4A52yT8Pk0ZTg5`;
 
-export const TWITTER_COMMUNITY_URL = `https://twitter.com/`;
+export const TWITTER_COMMUNITY_URL = `https://twitter.com/whizartgame`;
 
 export const WHITEPAPER_URL = `https://whitepaper.whizart.co/`;
 

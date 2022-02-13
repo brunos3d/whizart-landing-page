@@ -11,6 +11,7 @@ import {
   ArtificialIntelligence,
   Roadmap,
   Tokenomics,
+  Community,
 } from './sections';
 
 import styles from './styles.module.css';
@@ -48,6 +49,8 @@ export default function Home() {
         <Tokenomics id="tokenomics" />
 
         <Team id="team" />
+
+        <Community id="community" />
       </main>
     </Controller>
   );

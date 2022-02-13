@@ -1,3 +1,51 @@
 .section {
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(/images/backgrounds/office.jpg);
+  background-size: 100%;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  color: var(--white);
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.link {
+  width: 100%;
+  max-width: 280px;
+  min-height: 182px;
+  padding-top: 43px;
+  padding-bottom: 37px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background: url(/images/backgrounds/small-frame.jpg);
+  background-size: 100%;
+}
+
+.network {
+  font-family: Rowdies;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--cornflower-blue);
 }

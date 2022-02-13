@@ -26,9 +26,9 @@
 }
 
 .description {
-  margin-top: 18px;
-  text-align: center;
-  color: var(--white);
+  margin-top: 18px !important;
+  text-align: center !important;
+  color: var(--white) !important;
 }
 
 .socialLink {
