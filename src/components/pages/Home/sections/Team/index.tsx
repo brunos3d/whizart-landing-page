@@ -46,12 +46,6 @@ const members: TeamMemberProps[] = [
     socialUrl: `https://www.linkedin.com/in/pedrokcosta/`,
   },
   {
-    name: `Rafaela Pitta`,
-    bio: `User Experience Designer Working with world-renowned brands such as Adidas, Activision, Meta, Nestlé, AVEDA, AeroMexico. Nielsen Norman Group UX Certified.`,
-    avatarUrl: `/images/team/rafaela-pitta.png`,
-    socialUrl: `https://www.linkedin.com/in/rafaelapitta/`,
-  },
-  {
     name: `Bruno Silva`,
     bio: `Frontend Developer, +7 years as Unity Engine game developer, Tech Lead on +80 hackathons at Shawee, Frontend Developer at Rocketseat. Web3 enthusiast.`,
     avatarUrl: `/images/team/bruno-silva.png`,
@@ -81,7 +75,7 @@ export default function Team({ className, ...rest }: TeamProps) {
   return (
     <section className={cn(styles.section, className)} {...rest}>
       <Container className={styles.container}>
-        <Subtitle className={styles.subtitle}>Core Team</Subtitle>
+        <Subtitle className={styles.subtitle}>The WhizArt Team</Subtitle>
 
         <ul className={styles.teamMembers}>
           {members.map((member) => (

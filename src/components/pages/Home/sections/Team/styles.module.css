@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+.subtitle {
+  color: var(--white);
+}
+
 .teamMembers {
   width: 100%;
   margin-top: 71px;
