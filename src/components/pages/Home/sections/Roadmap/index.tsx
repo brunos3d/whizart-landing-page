@@ -168,7 +168,7 @@ export default function Roadmap({ className, ...rest }: RoadmapProps) {
               <Scene
                 offset={40}
                 duration={35 * checkpoints.length}
-                indicators={true}
+                indicators={false}
                 key={title}
               >
                 {(progress: number) => (
