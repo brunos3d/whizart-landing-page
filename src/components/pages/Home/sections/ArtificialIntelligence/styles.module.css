@@ -1,8 +1,8 @@
 .section {
   position: relative;
   min-height: 1024px;
-  padding-top: 160px;
-  padding-bottom: 180px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: url(/images/backgrounds/light-beige.png);
   background-size: 100%;
 }
@@ -14,32 +14,40 @@
 .headline {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+}
+
+.headline .subtitle {
+  text-align: center;
 }
 
 .headline .description {
   max-width: 450px;
   margin-top: 16px;
+  text-align: center;
   color: var(--old-copper);
 }
 
 .nasaLink {
-  margin-top: 24px;
+  margin-top: 32px;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .nasaLink > * {
-  margin-left: 24px;
+  margin-left: 12px;
 }
 
 .nasaText {
+  white-space: nowrap;
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
-  line-height: 21px;
+  line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
   color: var(--cola);
@@ -47,14 +55,15 @@
 
 .tabMenu {
   width: 100%;
-  margin-top: 48px;
+  margin-top: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .tabList {
   width: 100%;
-  max-width: 728px;
+  margin-top: 32px;
   padding-bottom: 16px;
   position: relative;
   display: flex;
@@ -108,9 +117,7 @@
 
 .tab .text {
   width: 100%;
-  font-size: 24px;
   font-weight: 700;
-  line-height: 36px;
   text-align: center;
   white-space: nowrap;
   color: var(--cioccolato);
@@ -123,11 +130,13 @@
 
 .tabPanelContainer {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .tabPanel {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -137,6 +146,7 @@
 }
 
 .tabPanelContent {
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,6 +161,90 @@
 }
 
 .tabPanelContent .cta {
-  max-width: 231px;
   margin-top: 32px;
+}
+
+/* Extra small devices */
+@media (min-width: 375px) {
+  .nasaLink {
+    flex-direction: row;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .nasaLink > * {
+    margin-left: 24px;
+  }
+
+  .nasaText {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .tab .text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .section {
+    padding-top: 160px;
+    padding-bottom: 180px;
+  }
+
+  .headline {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .headline .subtitle,
+  .headline .description {
+    text-align: left;
+  }
+
+  .nasaLink {
+    margin-top: 24px;
+  }
+
+  .tabPanelContainer {
+    margin-top: 60px;
+  }
+
+  .tabPanel {
+    flex-direction: row;
+  }
+
+  .tabPanelContent {
+    margin-top: 0;
+    padding-left: 32px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .tabMenu {
+    margin-top: 48px;
+    flex-direction: row;
+  }
+
+  .tabMenu .subtitle {
+    margin-right: 32px;
+    white-space: nowrap;
+  }
+
+  .tabList {
+    margin-top: 0;
+    max-width: 728px;
+  }
+
+  .tabPanelContent .cta {
+    max-width: 231px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

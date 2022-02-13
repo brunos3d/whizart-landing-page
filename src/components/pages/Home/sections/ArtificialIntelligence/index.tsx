@@ -43,6 +43,7 @@ export default function ArtificialIntelligence({
                   alt="NASA logo"
                   width="142"
                   height="39"
+                  layout="fixed"
                 />
               </div>
               <span className={styles.nasaText}>
@@ -55,6 +56,7 @@ export default function ArtificialIntelligence({
                   alt="Arrow up right"
                   width="32"
                   height="32"
+                  layout="fixed"
                 />
               </div>
             </a>
