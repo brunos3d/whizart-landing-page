@@ -43,15 +43,17 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
         <Subtitle className={styles.subtitle}>Gameplay</Subtitle>
 
         <div className={styles.nav}>
-          <Link href="/#order-commissions">
-            <a className={styles.navLink}>Order Commissions</a>
-          </Link>
-          <Link href="/#artwork">
-            <a className={styles.navLink}>Artwork</a>
-          </Link>
-          <Link href="/#manage-artists">
-            <a className={styles.navLink}>Manage Artists</a>
-          </Link>
+          <Container className={styles.navContainer}>
+            <Link href="/#order-commissions">
+              <a className={styles.navLink}>Order Commissions</a>
+            </Link>
+            <Link href="/#artwork">
+              <a className={styles.navLink}>Artwork</a>
+            </Link>
+            <Link href="/#manage-artists">
+              <a className={styles.navLink}>Manage Artists</a>
+            </Link>
+          </Container>
         </div>
         <hr className={styles.hr} />
       </div>
@@ -84,6 +86,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
                 alt="WhizArt Coins"
                 width="426"
                 height="283"
+                objectFit="contain"
               />
             </div>
           </div>
@@ -123,6 +126,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
                 alt="Doge AI Output"
                 width="528"
                 height="309"
+                objectFit="contain"
               />
             </div>
           </div>

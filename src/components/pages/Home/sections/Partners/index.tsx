@@ -59,20 +59,24 @@ export default function Partners({ className, ...rest }: PartnersProps) {
                 clickable: true,
               }}
               modules={[Autoplay]}
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                },
-                576: {
-                  slidesPerView: 2,
-                },
-                768: {
-                  slidesPerView: 4,
-                },
-                992: {
-                  slidesPerView: 3,
-                },
-              }}
+              breakpoints={
+                process.env.NODE_ENV === `production`
+                  ? {
+                      320: {
+                        slidesPerView: 1,
+                      },
+                      576: {
+                        slidesPerView: 2,
+                      },
+                      768: {
+                        slidesPerView: 4,
+                      },
+                      992: {
+                        slidesPerView: 3,
+                      },
+                    }
+                  : {}
+              }
               className={styles.swiper}
             >
               {partners.map(({ name, url, width, height }) => (

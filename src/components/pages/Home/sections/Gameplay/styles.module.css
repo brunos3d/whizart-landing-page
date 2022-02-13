@@ -28,10 +28,10 @@
 
 .navLink {
   font-family: Rowdies;
-  font-size: 24px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 36px;
+  line-height: 21px;
   letter-spacing: -0.03em;
   text-align: center;
   color: var(--white);
@@ -48,43 +48,40 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-.features {
-  margin-top: 46px;
-}
-
 .feature {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-}
-
-.feature.inverse {
-  flex-direction: row-reverse;
 }
 
 .featContent {
   width: 100%;
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .featSubtitle {
-  margin-top: 40px;
+  margin-top: 24px;
   color: var(--white);
 }
 
 .featDescription {
-  margin-top: 24px;
+  margin-top: 16px;
+  text-align: center;
   color: var(--solitude);
 }
 
 .featMedia {
+  margin-top: 32px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.feature.inverse .featMedia {
-  margin-right: 104px;
+.feature:not(.inverse) .featMedia {
+  width: 100%;
 }
 
 .cta {
@@ -93,15 +90,7 @@
 }
 
 .connections {
-  width: calc(50% + 24px);
-  height: calc((min(100vw, 1216px) / 2) * 0.312);
-  position: relative;
-}
-
-.connections.flip {
-  width: 50%;
-  margin-left: 24px;
-  transform: rotateY(180deg);
+  display: none;
 }
 
 .swiper {
@@ -109,4 +98,82 @@
   height: 384px;
   overflow: visible;
   user-select: none;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navLink {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .features {
+    margin-top: 46px;
+  }
+
+  .feature {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: row;
+  }
+
+  .feature.inverse {
+    flex-direction: row-reverse;
+  }
+
+  .featContent {
+    max-width: 50%;
+    align-items: flex-start;
+  }
+
+  .featMedia {
+    margin-top: 0;
+  }
+
+  .featSubtitle {
+    margin-top: 40px;
+  }
+
+  .featDescription {
+    margin-top: 24px;
+    text-align: left;
+  }
+
+  .feature:not(.inverse) .featMedia {
+    margin-left: 50px;
+  }
+
+  .feature.inverse .featMedia {
+    margin-right: 50px;
+    justify-content: flex-start;
+  }
+
+  .connections {
+    display: block;
+    width: calc(50% + 24px);
+    height: calc((min(100vw, 1216px) / 2) * 0.312);
+    position: relative;
+  }
+
+  .connections.flip {
+    width: 50%;
+    margin-left: 24px;
+    transform: rotateY(180deg);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
