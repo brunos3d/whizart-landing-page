@@ -74,10 +74,10 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
               </Subtitle>
 
               <Text className={styles.featDescription}>
-                The only game where you can produce art while you play.
-                WhizArt&apos;s unique system combines through API a variety of
-                image banks and a vast range of art style to produce Art with
-                you own NFT characters.
+                In WhizArt, players assume the role of Patrons; and Commission
+                is the order to produce a piece of art. Players will order
+                commissions to the Artists they own in order to gain $WHIZ and
+                possibly mint NFT Art.
               </Text>
             </div>
             <div className={styles.featMedia}>
@@ -153,8 +153,9 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
               </Subtitle>
 
               <Text className={styles.featDescription}>
-                Collect, upgrade and trade Artists to create the perfect
-                combination of inspiration for your original NFT Artwork.
+                Collect, update and trade artists to create the perfect mix of
+                inspiration for your original NFT art and maximize your $WHIZ
+                earnings.
               </Text>
 
               <LinkButton
