@@ -108,13 +108,15 @@ export default function Tokenomics({ className, ...rest }: TokenomicsProps) {
         </div>
 
         <div className={styles.palette}>
-          <Image
-            src="/images/palette.png"
-            alt="Palette"
-            width="590"
-            height="503"
-            objectFit="contain"
-          />
+          <div className={styles.paletteContainer}>
+            <Image
+              src="/images/palette.png"
+              alt="Palette"
+              width="590"
+              height="503"
+              objectFit="contain"
+            />
+          </div>
 
           <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
             Read Whitepaper

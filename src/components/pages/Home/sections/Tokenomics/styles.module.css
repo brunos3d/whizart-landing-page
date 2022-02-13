@@ -19,26 +19,34 @@
 }
 
 .container {
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .content {
-  max-width: 50%;
-  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .frameBackgroundContainer {
   position: absolute;
-  top: -50px;
+  top: 0;
   left: 0;
-  right: calc(50% + 38px);
-  bottom: -38px;
+  right: 0;
+  bottom: 0;
   z-index: -1;
 }
 
 .description {
   margin-top: 16px;
-  max-width: 450px;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 26px;
 }
 
 .pools {
@@ -52,26 +60,120 @@
 }
 
 .pool + .pool {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .poolDescription {
   margin-left: 14px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 18px;
   color: var(--cioccolato);
 }
 
 .palette {
   margin-top: 25px;
-  max-width: 590px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.paletteContainer {
+  max-width: 360px;
+}
+
 .cta {
-  max-width: 231px;
-  margin-top: 82px;
+  margin-top: 16px;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .frameBackgroundContainer {
+    left: 20px;
+    right: 20px;
+  }
+
+  .content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .description {
+    padding-left: 48px;
+    padding-right: 64px;
+  }
+
+  .pool + .pool {
+    margin-top: 16px;
+  }
+
+  .poolDescription {
+    margin-left: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .paletteContainer {
+    max-width: unset;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .description {
+    max-width: 720px;
+  }
+
+  .cta {
+    max-width: 231px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .content {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: unset;
+    max-width: 50%;
+    padding-right: 50px;
+    align-items: flex-start;
+  }
+
+  .frameBackgroundContainer {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: calc(50% + 38px);
+    bottom: -38px;
+    z-index: -1;
+  }
+
+  .description {
+    padding: 0;
+    max-width: 450px;
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .palette {
+    max-width: 590px;
+  }
+
+  .cta {
+    margin-top: 82px;
+  }
 }
