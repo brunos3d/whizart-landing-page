@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import {
   DISCORD_INVITE_URL,
-  TELEGRAM_COMMUNITY_URL,
+  TELEGRAM_COMMUNITY_ANNOUNCEMENT_URL,
   TWITTER_COMMUNITY_URL,
 } from '@/data/urls';
 
@@ -27,7 +27,7 @@ const social = [
   },
   {
     network: `telegram`,
-    url: TELEGRAM_COMMUNITY_URL,
+    url: TELEGRAM_COMMUNITY_ANNOUNCEMENT_URL,
     iconUrl: `/logos/telegram.svg`,
   },
 ];

@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
 
+import { sections } from '@/components/pages/Home';
+
 import { WHITEPAPER_URL } from '@/data/urls';
 import { Container, Text, Badge, Nav, LinkButton } from '@/components';
 
@@ -14,17 +16,8 @@ export type HeroProps = HTMLAttributes<HTMLElement>;
 export default function Hero({ className, ...rest }: HeroProps) {
   return (
     <section className={cn(styles.section, className)} {...rest}>
-      {/* <Image
-            className={styles.backgroundImage}
-            src="/images/backgrounds/light-beige.png"
-            alt="Background"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-          /> */}
-
       <Container className={styles.container}>
-        <Nav className={styles.nav} />
+        <Nav className={styles.nav} sections={sections} />
 
         <div className={styles.content}>
           <Badge className={styles.badge}>Coming Soon</Badge>

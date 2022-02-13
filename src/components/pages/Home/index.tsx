@@ -1,6 +1,8 @@
 import { Controller, Scene } from 'react-scrollmagic';
 
-import { SEO, Navbar } from '@/components';
+import type { SectionLink } from '@/types';
+
+import { SEO, Navbar, Footer } from '@/components';
 import {
   Hero,
   Team,
@@ -16,6 +18,33 @@ import {
 
 import styles from './styles.module.css';
 
+export const sections: SectionLink[] = [
+  {
+    title: `Gameplay`,
+    url: `/#gameplay`,
+  },
+  {
+    title: `NFT`,
+    url: `/#nft`,
+  },
+  {
+    title: `Artificial Intelligence`,
+    url: `/#artificial-intelligence`,
+  },
+  {
+    title: `Roadmap`,
+    url: `/#roadmap`,
+  },
+  {
+    title: `Tokenomics`,
+    url: `/#tokenomics`,
+  },
+  {
+    title: `Team`,
+    url: `/#team`,
+  },
+];
+
 export default function Home() {
   return (
     <Controller>
@@ -28,7 +57,7 @@ export default function Home() {
         pin
         classToggle={[`.${styles.navbar}`, styles.navbarShow]}
       >
-        <Navbar className={styles.navbar} />
+        <Navbar className={styles.navbar} sections={sections} />
       </Scene>
 
       <main className={styles.main}>
@@ -51,6 +80,8 @@ export default function Home() {
         <Team id="team" />
 
         <Community id="community" />
+
+        <Footer sections={sections} />
       </main>
     </Controller>
   );

@@ -3,9 +3,10 @@
   --black: #000;
   --blue: #0b80ff;
   --gold: #f9d100;
-  --solitude: #e6f2ff;
-  --dawn-pink: #eee5dd;
+  --sidecar: #f5e2c9;
   --champagne: #f9ead3;
+  --dawn-pink: #eee5dd;
+  --solitude: #e6f2ff;
   --cornflower-blue: #9b6f54;
   --spicy-mix: #7a583f;
   --old-copper: #7d5833;
@@ -58,7 +59,7 @@ body {
 
 html {
   color: var(--old-copper);
-  background: var(--coffee-bean);
+  background: var(--sidecar);
 }
 
 body {

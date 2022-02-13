@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 import { useTabState, Tab, TabList, TabPanel } from 'reakit/Tab';
 
-import { NASA_PROJECT_AWARD, WHITEPAPER_URL } from '@/data/urls';
+import { NASA_PROJECT_AWARD_URL, WHITEPAPER_URL } from '@/data/urls';
 import { Container, LinkButton, Subtitle, Text } from '@/components';
 
 import styles from './styles.module.css';
@@ -31,7 +31,7 @@ export default function ArtificialIntelligence({
             </Text>
           </div>
 
-          <Link href={NASA_PROJECT_AWARD}>
+          <Link href={NASA_PROJECT_AWARD_URL}>
             <a
               className={styles.nasaLink}
               target="_blank"

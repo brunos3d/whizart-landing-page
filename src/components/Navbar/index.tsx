@@ -4,14 +4,18 @@ import Link from 'next/link';
 import cn from 'classnames';
 import { Scene } from 'react-scrollmagic';
 
+import type { SectionLink } from '@/types';
+
 import { WHITEPAPER_URL } from '@/data/urls';
 import { Container, Nav, LinkButton } from '@/components';
 
 import styles from './styles.module.css';
 
-export type NavbarProps = HTMLAttributes<HTMLElement>;
+export type NavbarProps = HTMLAttributes<HTMLElement> & {
+  sections: SectionLink[];
+};
 
-export default function Navbar({ className, ...rest }: NavbarProps) {
+export default function Navbar({ className, sections, ...rest }: NavbarProps) {
   return (
     <nav className={cn(styles.navbar, className)} {...rest}>
       <Scene offset={120} duration={75} indicators={false} triggerHook={0}>
@@ -35,7 +39,7 @@ export default function Navbar({ className, ...rest }: NavbarProps) {
               </Link>
             </div>
 
-            <Nav className={styles.nav} />
+            <Nav className={styles.nav} sections={sections} />
 
             <LinkButton
               className={styles.cta}
