@@ -1,50 +1,183 @@
 .section {
   position: relative;
-  padding: 92px 0;
-  overflow: hidden;
+  padding-top: calc(365px / 2 + 100px);
+  padding-bottom: 100px;
+  background: url(/images/backgrounds/blue.png);
+  background-size: 100%;
 }
 
-.container {
-  height: 100%;
+.headline {
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
-.col {
-  height: 100%;
+.subtitle {
+  color: var(--white);
+}
+
+.nav {
+  width: 100%;
+  max-width: 726px;
+  margin-top: 76px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLink {
+  font-family: Rowdies;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--white);
+}
+
+.navLink:hover {
+  color: var(--gold);
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.feature {
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.featContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featSubtitle {
+  margin-top: 24px;
+  color: var(--white);
+}
+
+.featDescription {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--solitude);
+}
+
+.featMedia {
+  margin-top: 32px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card {
-  margin-top: 32px;
-  max-width: 566px;
+.feature:not(.inverse) .featMedia {
+  width: 100%;
 }
 
-.backgroundContainer {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+.cta {
+  max-width: 231px;
+  margin-top: 32px;
+}
+
+.connections {
+  display: none;
+}
+
+.swiper {
+  width: 280px;
+  height: 384px;
+  overflow: visible;
+  user-select: none;
+}
+
+.featMedia:has(.swiper) {
+  overflow: hidden;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navLink {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .features {
+    margin-top: 46px;
+  }
+
+  .feature {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: row;
+  }
+
+  .feature.inverse {
+    flex-direction: row-reverse;
+  }
+
+  .featContent {
+    max-width: 50%;
+    align-items: flex-start;
+  }
+
+  .featMedia {
+    margin-top: 0;
+  }
+
+  .featSubtitle {
+    margin-top: 40px;
+  }
+
+  .featDescription {
+    margin-top: 24px;
+    text-align: left;
+  }
+
+  .feature:not(.inverse) .featMedia {
+    margin-left: 50px;
+  }
+
+  .feature.inverse .featMedia {
+    margin-right: 50px;
+    justify-content: flex-start;
+  }
+
+  .connections {
+    display: block;
+    width: calc(50% + 24px);
+    height: calc((min(100vw, 1216px) / 2) * 0.312);
+    position: relative;
+  }
+
+  .connections.flip {
+    width: 50%;
+    margin-left: 24px;
+    transform: rotateY(180deg);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .container {
-    flex-direction: row;
-  }
+}
 
-  .col + .col {
-    margin-left: 46px;
-  }
-
-  .card {
-    margin-top: unset;
-  }
-
-  .card + .card {
-    margin-top: 46px;
-  }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

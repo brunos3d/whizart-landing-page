@@ -1,110 +1,179 @@
 .section {
-  width: 100%;
-  padding: 100px 0;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  background: url(/images/backgrounds/brush-strokes-ripped.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content {
-  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.subtitle {
-  margin-bottom: 56px;
-}
-
-.table {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  border-style: hidden;
-}
-
-.tdata {
-  padding-top: 7px;
-  font-family: Kanit;
-  font-size: 14px;
-  line-height: 18px;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  text-align: right;
-  color: var(--white);
-  border: 3px solid var(--white);
-}
-
-.tdata:first-child {
-  text-align: left;
-}
-
-.tdata:nth-child(2) {
-  padding-right: 4px;
-  width: 88px;
-}
-
-.backgroundContainer {
+.frameBackgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -1;
-  display: none;
+}
+
+.description {
+  margin-top: 16px;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 26px;
+}
+
+.pools {
+  margin-top: 32px;
+  list-style: none;
+}
+
+.pool {
+  display: flex;
+  align-items: center;
+}
+
+.pool + .pool {
+  margin-top: 8px;
+}
+
+.poolDescription {
+  margin-left: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--cioccolato);
+}
+
+.palette {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paletteContainer {
+  max-width: 360px;
+}
+
+.cta {
+  margin-top: 16px;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  .tdata {
-    padding-top: 12px;
+  .frameBackgroundContainer {
+    left: 20px;
+    right: 20px;
+  }
+
+  .content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .description {
+    padding-left: 48px;
+    padding-right: 64px;
+  }
+
+  .pool + .pool {
+    margin-top: 16px;
+  }
+
+  .poolDescription {
+    margin-left: 14px;
     font-size: 20px;
-    line-height: 32px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .paletteContainer {
+    max-width: unset;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .subtitle {
-    font-size: 32px;
+  .description {
+    max-width: 720px;
   }
 
-  .content {
-    width: 100%;
-  }
-
-  .table {
-    max-width: 64%;
-  }
-
-  .tdata {
-    font-size: 18px;
-    line-height: 24px;
+  .cta {
+    max-width: 231px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .subtitle:not(.mobile) {
-    font-size: 48px;
-    left: 14.7%;
-  }
-
-  .table {
-    max-width: 627px;
-  }
-
-  .tdata {
-    font-size: 24px;
-    line-height: 36px;
-  }
-
-  .backgroundContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .subtitle:not(.mobile) {
-    left: 16.7%;
+  .container {
+    flex-direction: row;
+  }
+
+  .content {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: unset;
+    max-width: 50%;
+    padding-right: 50px;
+    align-items: flex-start;
+  }
+
+  .frameBackgroundContainer {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: calc(50% + 38px);
+    bottom: -38px;
+    z-index: -1;
+  }
+
+  .description {
+    padding: 0;
+    max-width: 450px;
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .palette {
+    max-width: 590px;
+  }
+
+  .cta {
+    margin-top: 82px;
   }
 }

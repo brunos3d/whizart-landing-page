@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { HTMLAttributes } from 'react';
 import cn from 'classnames';
 
+import { Subtitle, Text } from '@/components';
+
 import styles from './styles.module.css';
 
 export type TeamMemberProps = {
@@ -30,8 +32,12 @@ export default function TeamMember({
             height={512}
           />
         </div>
-        <h3 className={styles.name}>{name}</h3>
-        <p className={styles.bio}>{bio}</p>
+
+        <Subtitle className={styles.name} as="h5">
+          {name}
+        </Subtitle>
+
+        <Text className={styles.description}>{bio}</Text>
       </div>
       {socialUrl && (
         <a

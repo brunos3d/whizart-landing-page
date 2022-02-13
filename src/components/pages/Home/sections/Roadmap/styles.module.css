@@ -1,0 +1,191 @@
+.section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 380px;
+  background: url(/images/backgrounds/blue.png);
+  background-size: 100%;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.doorContainer {
+  max-height: 280;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subtitle {
+  color: var(--white);
+  max-width: 330px;
+  margin-bottom: 22px;
+}
+
+.roadmap {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 24px;
+}
+
+.milestones {
+  list-style: none;
+}
+
+.milestone {
+  counter-increment: milestone-counter;
+  position: relative;
+}
+
+.milestone:not(:first-child) {
+  margin-top: 26px;
+}
+
+.milestone::before {
+  --size: 24px;
+  content: counter(milestone-counter);
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 0;
+  left: calc(-1 * var(--size));
+  color: var(--cola);
+  background: var(--gold);
+  border-radius: 50%;
+  font-size: 16px;
+  font-style: normal;
+  line-height: var(--size);
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.milestone .subtitle {
+  margin-left: 24px;
+  text-align: left;
+}
+
+.checkpoints {
+  margin-left: 12px;
+  list-style: none;
+  position: relative;
+}
+
+.checkpoints:before {
+  --size: 24px;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(-1 * var(--size));
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.checkpoints:after {
+  --size: 24px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(-1 * var(--size));
+  border-left: 2px solid var(--gold);
+  transition: all 0.2s ease-in-out;
+}
+
+.checkpoint {
+  display: flex;
+  align-items: center;
+}
+
+.checkpoint + .checkpoint {
+  margin-top: 8px;
+}
+
+.checkmark {
+  opacity: 1;
+}
+
+.checkmark.disabled {
+  opacity: 0.5;
+}
+
+.checkpoint .text {
+  margin-left: 8px;
+  color: var(--white);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .subtitle {
+    max-width: unset;
+  }
+
+  .roadmap {
+    margin-left: 48px;
+  }
+
+  .milestone::before {
+    --size: 48px;
+    font-size: 32px;
+  }
+
+  .checkpoints {
+    margin-left: 24px;
+  }
+
+  .checkpoints:before {
+    --size: 48px;
+  }
+
+  .checkpoints:after {
+    --size: 48px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .section {
+    padding-top: 160px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .section {
+    padding-bottom: 160px;
+  }
+
+  .container {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .stickyContainer {
+    height: fit-content;
+    max-width: 478px;
+    position: sticky;
+    top: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doorContainer {
+    position: unset;
+    transform: unset;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .roadmap {
+    max-width: 400px;
+    margin-top: 0;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

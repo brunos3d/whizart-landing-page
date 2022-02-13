@@ -1,0 +1,203 @@
+.section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  background: url(/images/backgrounds/brush-strokes-ripped.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.headline {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards {
+  margin-top: 36px;
+  max-width: 520px;
+  display: flex;
+}
+
+.card + .card {
+  margin-left: 20px;
+}
+
+.content {
+  max-width: 592px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  margin-top: 24px;
+  color: var(--white);
+  text-align: center;
+}
+
+.description {
+  color: var(--dawn-pink);
+  text-align: center;
+}
+
+.entities {
+  width: 100%;
+  min-height: 437px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tabMenu {
+  width: 100%;
+  height: min-content;
+  max-width: 453px;
+  padding-left: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabMenu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 1px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tabMenu:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 33%;
+  width: 3px;
+  background: var(--gold);
+  transition: 0.3s all ease-in-out;
+}
+
+.tabMenu.start:after {
+  transform: translateY(0%);
+}
+
+.tabMenu.middle:after {
+  transform: translateY(100%);
+}
+
+.tabMenu.end:after {
+  transform: translateY(200%);
+}
+
+.tabPanel {
+  width: 100%;
+  margin-top: 36px;
+}
+
+.dButton {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.dButton:not(:first-child) {
+  margin-top: 40px;
+}
+
+.dButton h5 {
+  color: var(--white);
+}
+
+.dDescription {
+  margin-top: 16px;
+  color: var(--dawn-pink);
+}
+
+.dCta {
+  margin-top: 24px;
+}
+
+.artistsSwiper {
+  min-height: 224px;
+}
+
+.workshopSwiper {
+  min-height: 60vw;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .artistsSwiper {
+    min-height: 418px;
+  }
+
+  .workshopSwiper {
+    min-height: 390px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .entities {
+    flex-direction: row;
+  }
+
+  .tabPanel {
+    max-width: 592px;
+  }
+
+  .dCta {
+    max-width: 215px;
+  }
+
+  .workshopSwiper {
+    min-height: 380px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .cards {
+    margin-top: unset;
+  }
+
+  .headline {
+    flex-direction: row;
+  }
+
+  .content {
+    align-items: flex-start;
+  }
+  .description,
+  .subtitle {
+    text-align: left;
+  }
+}

@@ -1,31 +1,51 @@
 .button {
   width: 100%;
-  font-family: Kanit;
-  font-size: 18px;
-  line-height: 28px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  text-align: center;
+  height: fit-content;
+
   padding-top: 16px;
   padding-bottom: 16px;
   border-radius: 5px;
-  color: var(--black);
-  background: var(--white);
+
+  display: inline-block;
+
+  font-family: Outfit;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: all 0.1s ease-in-out;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .button {
-    font-size: 20px;
-    line-height: 32px;
-  }
+.button:hover {
+  transform: translateY(4px);
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .button {
-    font-size: 24px;
-    line-height: 35px;
-  }
+.button.primary {
+  padding-bottom: 16px;
+  color: var(--cioccolato);
+  background: var(--gold);
+  box-shadow: 0px 4px 0px #f8b12f;
+}
+
+.button.primary:hover {
+  color: var(--gold);
+  background: var(--cioccolato);
+  box-shadow: 0px 0px 0px #f8b12f;
+}
+
+.button.secondary {
+  background: #00000000;
+  color: var(--cioccolato);
+  border: 1px solid var(--cioccolato);
+}
+
+.button.secondary:hover {
+  color: var(--gold);
+  background: var(--cioccolato);
+  border: 1px solid #00000000;
 }

@@ -1,26 +1,34 @@
 .subtitle {
-  font-family: Kanit;
-  font-size: 24px;
-  line-height: 32px;
+  font-family: Rowdies;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0px;
   text-align: left;
-  color: var(--white);
+  color: var(--cioccolato);
 }
 
-/* Extra small devices */
-@media (min-width: 320px) {
-  .subtitle {
-    font-size: 28px;
-    line-height: 36px;
-  }
+.h4,
+.h5 {
+  font-size: 24px;
+  line-height: 38px;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .subtitle {
-    font-size: 48px;
-    line-height: 72px;
+    font-size: 64px;
+    line-height: 79px;
+  }
+
+  .h4 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .h5 {
+    font-size: 32px;
+    line-height: 48px;
   }
 }

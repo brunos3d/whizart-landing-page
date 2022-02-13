@@ -1,7 +1,10 @@
-import { AppProps } from 'next/app';
-import '@/styles/global.css';
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
+import { Provider as ReakitProvider } from 'reakit';
+
+import 'swiper/css';
+import '@/styles/global.css';
 
 declare const window: any;
 
@@ -20,5 +23,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       router.events.off(`routeChangeComplete`, handleRouteChange);
     };
   }, [router.events]);
-  return <Component {...pageProps} />;
+  return (
+    <ReakitProvider>
+      <Component {...pageProps} />
+    </ReakitProvider>
+  );
 }

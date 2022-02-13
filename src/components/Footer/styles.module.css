@@ -1,0 +1,138 @@
+.footer {
+  position: relative;
+}
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoArea {
+  max-width: 314px;
+  min-width: 251px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories {
+  margin-top: 85px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logoArea span {
+  margin-top: 32px;
+  font-family: Rowdies;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--spicy-mix);
+}
+
+.rightsArea {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  background: var(--blue);
+}
+
+.rightsContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.rightsArea span {
+  color: var(--white);
+}
+
+.category .text {
+  font-family: Rowdies;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--cioccolato);
+}
+
+.links {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.link + .link {
+  margin-top: 8px;
+}
+
+.anchor {
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--old-copper);
+}
+
+.anchor.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.badge {
+  margin-left: 6px;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .categories {
+    justify-content: space-evenly;
+  }
+
+  .logoArea span {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .categories {
+    margin-top: 0;
+    max-width: 732px;
+    justify-content: space-between;
+  }
+
+  .category {
+    margin-right: 36px;
+  }
+}

@@ -21,26 +21,14 @@
 
 .name {
   margin-top: 31px;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--white);
 }
 
-.bio {
-  margin-top: 18px;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: -0.03em;
-  text-align: center;
-  color: var(--white);
+.description {
+  margin-top: 18px !important;
+  text-align: center !important;
+  color: var(--dawn-pink) !important;
 }
 
 .socialLink {
@@ -58,10 +46,5 @@
   .name {
     font-size: 24px;
     line-height: 29px;
-  }
-
-  .bio {
-    font-size: 18px;
-    line-height: 27px;
   }
 }

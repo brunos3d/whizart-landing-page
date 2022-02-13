@@ -1,12 +1,13 @@
-import Image from 'next/image';
 import { HTMLAttributes } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import cn from 'classnames';
 
-import { Container, Subtitle, Paragraph, LinkButton } from '@/components';
+import { useTabState, Tab, TabList, TabPanel } from 'reakit/Tab';
 
-import { NASA_PROJECT_AWARD, WHITEPAPER_IA_URL } from '@/data/urls';
+import { NASA_PROJECT_AWARD_URL, WHITEPAPER_URL } from '@/data/urls';
+import { Container, LinkButton, Subtitle, Text } from '@/components';
 
-import pStyles from '@/components/Paragraph/styles.module.css';
 import styles from './styles.module.css';
 
 export type ArtificialIntelligenceProps = HTMLAttributes<HTMLElement>;
@@ -15,73 +16,197 @@ export default function ArtificialIntelligence({
   className,
   ...rest
 }: ArtificialIntelligenceProps) {
+  const tab = useTabState();
   return (
     <section className={cn(styles.section, className)} {...rest}>
-      <div className={styles.backgroundContainer}>
-        <Image
-          src="/images/artificial-intelligence.png"
-          alt="Representation of the game's artificial intelligence"
-          layout="fill"
-          objectFit="scale-down"
-          objectPosition="left"
-        />
-      </div>
-
       <Container className={styles.container}>
-        <div className={styles.content}>
-          <Subtitle className={styles.subtitle}>
-            Artificial Intelligence
+        <div className={styles.headline}>
+          <div className={styles.content}>
+            <Subtitle className={styles.subtitle}>
+              Artificial Intelligence
+            </Subtitle>
+            <Text className={styles.description}>
+              Whizzy, our NASA award winning A.I, can produce unique NFT
+              artworks based on your own Artists and Workshops
+            </Text>
+          </div>
+
+          <Link href={NASA_PROJECT_AWARD_URL}>
+            <a
+              className={styles.nasaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <Image
+                  src="/logos/nasa.svg"
+                  alt="NASA logo"
+                  width="142"
+                  height="39"
+                  layout="fixed"
+                />
+              </div>
+              <span className={styles.nasaText}>
+                Space Apps Challenge <br />
+                Award Winning
+              </span>
+              <div>
+                <Image
+                  src="/icons/arrow-up-right.svg"
+                  alt="Arrow up right"
+                  width="32"
+                  height="32"
+                  layout="fixed"
+                />
+              </div>
+            </a>
+          </Link>
+        </div>
+
+        <div className={styles.tabMenu}>
+          <Subtitle className={styles.subtitle} as="h4">
+            How it works
           </Subtitle>
 
-          <Paragraph className={styles.paragraph}>
-            Whizzy can produce unique NFT artworks based on three inputs:
-          </Paragraph>
-
-          <ol className={styles.iaInputs}>
-            <li className={cn(styles.paragraph, pStyles.paragraph)}>
-              1. Artist
-            </li>
-            <li className={cn(styles.paragraph, pStyles.paragraph)}>
-              2. Workshop
-            </li>
-            <li className={cn(styles.paragraph, pStyles.paragraph)}>
-              3. Paints
-            </li>
-          </ol>
-
-          <LinkButton className={styles.cta} href={WHITEPAPER_IA_URL}>
-            Check the Whitepaper
-          </LinkButton>
-
-          <a
-            className={styles.award}
-            href={NASA_PROJECT_AWARD}
-            target="_blank"
-            rel="noopener noreferrer"
+          <TabList
+            {...tab}
+            className={cn(styles.tabList, {
+              [styles.start]: tab.selectedId === `artist`,
+              [styles.middle]: tab.selectedId === `workshop`,
+              [styles.end]: tab.selectedId === `artwork`,
+            })}
+            aria-label="Artificial Intelligence Features"
           >
-            <Image
-              src="/logos/nasa.svg"
-              alt="NASA Logo"
-              width={151}
-              height={42}
-            />
-            <span className={styles.awardText}>
-              Award
-              <br />
-              Winning
-            </span>
-          </a>
+            <Tab {...tab} className={styles.tab} id="artist">
+              <Text className={styles.text} as="span">
+                1. Artist
+              </Text>
+            </Tab>
+
+            <div className={styles.chevron}>
+              <Image
+                src="/icons/chevron-right.svg"
+                alt="Chevron right"
+                width="24"
+                height="24"
+              />
+            </div>
+
+            <Tab {...tab} className={styles.tab} id="workshop">
+              <Text className={styles.text} as="span">
+                2. Workshop
+              </Text>
+            </Tab>
+
+            <div className={styles.chevron}>
+              <Image
+                src="/icons/chevron-right.svg"
+                alt="Chevron right"
+                width="24"
+                height="24"
+              />
+            </div>
+
+            <Tab {...tab} className={styles.tab} id="artwork">
+              <Text className={styles.text} as="span">
+                3. Artwork
+              </Text>
+            </Tab>
+          </TabList>
+        </div>
+
+        <div className={styles.tabPanelContainer}>
+          <TabPanel {...tab} className={styles.tabPanel}>
+            {tab.selectedId === `artist` && (
+              <>
+                <div className={styles.panelImage}>
+                  <Image
+                    src="/images/the-great-wave-off-kanagawa.jpg"
+                    alt="The Great Wave off Kanagawa"
+                    width="492"
+                    height="373"
+                  />
+                </div>
+                <div className={styles.tabPanelContent}>
+                  <Subtitle className={styles.subtitle} as="h5">
+                    Artist
+                  </Subtitle>
+
+                  <Text className={styles.description}>
+                    Each NFT Artist has a unique and recognizable style. During
+                    a commission an Artist may be inspired enough to activate
+                    and imprint this style to an Artwork in order to create
+                    something unique.
+                  </Text>
+
+                  <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
+                    Read Whitepaper
+                  </LinkButton>
+                </div>
+              </>
+            )}
+          </TabPanel>
+          <TabPanel {...tab} className={styles.tabPanel}>
+            {tab.selectedId === `workshop` && (
+              <>
+                <div className={styles.panelImage}>
+                  <Image
+                    src="/images/asteroid-vesta.jpg"
+                    alt="The Vesta 4 asteroid"
+                    width="492"
+                    height="373"
+                  />
+                </div>
+                <div className={styles.tabPanelContent}>
+                  <Subtitle className={styles.subtitle} as="h5">
+                    Workshop
+                  </Subtitle>
+
+                  <Text className={styles.description}>
+                    NFT Workshop determines which category of content image our
+                    API will bring. Our APIs search in vast bank of images to
+                    match the environment and inspiration of the Workshop.
+                  </Text>
+
+                  <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
+                    Read Whitepaper
+                  </LinkButton>
+                </div>
+              </>
+            )}
+          </TabPanel>
+          <TabPanel {...tab} className={styles.tabPanel}>
+            {tab.selectedId === `artwork` && (
+              <>
+                <div className={styles.panelImage}>
+                  <Image
+                    src="/images/artai-vesta-output.jpg"
+                    alt="The Great Wave off Kanagawa"
+                    width="492"
+                    height="373"
+                  />
+                </div>
+                <div className={styles.tabPanelContent}>
+                  <Subtitle className={styles.subtitle} as="h5">
+                    Artwork
+                  </Subtitle>
+
+                  <Text className={styles.description}>
+                    Artwork is the consequent product of playing in the WhizArt
+                    Metaverse. It may be a result of an inspired commission (or
+                    a not so inspired attempt). Either way you can mint this as
+                    your own NFT and even sell it on marketplaces!
+                  </Text>
+
+                  <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
+                    Read Whitepaper
+                  </LinkButton>
+                </div>
+              </>
+            )}
+          </TabPanel>
         </div>
       </Container>
-
-      <div className={cn(styles.backgroundContainer, styles.mobile)}>
-        <Image
-          src="/images/artificial-intelligence.png"
-          alt="Representation of the game's artificial intelligence"
-          width={838}
-          height={931}
-        />
-      </div>
     </section>
   );
 }

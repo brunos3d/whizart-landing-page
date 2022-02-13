@@ -1,44 +1,92 @@
-import { SEO, SocialBar } from '@/components';
+import { Controller, Scene } from 'react-scrollmagic';
+
+import type { SectionLink } from '@/types';
+
+import { SEO, Navbar, Footer } from '@/components';
 import {
-  Navbar,
   Hero,
+  Team,
+  Partners,
   PlayToEarn,
   Gameplay,
-  Artists,
+  NFT,
   ArtificialIntelligence,
+  Roadmap,
   Tokenomics,
-  Team,
-  Footer,
+  Community,
 } from './sections';
 
 import styles from './styles.module.css';
 
+export const sections: SectionLink[] = [
+  {
+    title: `Gameplay`,
+    url: `/#gameplay`,
+  },
+  {
+    title: `NFT`,
+    url: `/#nft`,
+  },
+  {
+    title: `Artificial Intelligence`,
+    url: `/#artificial-intelligence`,
+  },
+  {
+    title: `Roadmap`,
+    url: `/#roadmap`,
+  },
+  {
+    title: `Tokenomics`,
+    url: `/#tokenomics`,
+  },
+  {
+    title: `Team`,
+    url: `/#team`,
+  },
+];
+
 export default function Home() {
   return (
-    <>
+    <Controller>
       <SEO shouldIndexPage />
 
-      <Navbar />
+      <Navbar className={styles.navbar} sections={sections} />
 
-      <SocialBar className={styles.socialBarContainer} direction="vertical" />
+      <Scene
+        offset={50}
+        indicators={false}
+        triggerHook={0}
+        pin
+        classToggle={[`.${styles.navbar}`, styles.navbarShow]}
+      >
+        <div></div>
+      </Scene>
 
       <main className={styles.main}>
-        <Hero />
+        <div className={styles.overflowHidden}>
+          <Hero />
 
-        <PlayToEarn />
+          <Partners id="partners" />
+        </div>
+
+        <PlayToEarn id="play-to-earn" />
 
         <Gameplay id="gameplay" />
 
-        <Artists id="nft" />
+        <NFT id="nft" />
 
-        <ArtificialIntelligence id="ai" />
+        <ArtificialIntelligence id="artificial-intelligence" />
+
+        <Roadmap id="roadmap" />
 
         <Tokenomics id="tokenomics" />
 
         <Team id="team" />
-      </main>
 
-      <Footer />
-    </>
+        <Community id="community" />
+
+        <Footer sections={sections} />
+      </main>
+    </Controller>
   );
 }

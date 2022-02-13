@@ -1,12 +1,36 @@
 .section {
   position: relative;
-  padding-bottom: 133px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+      0deg,
+      rgba(40, 25, 14, 0.7),
+      rgba(40, 25, 14, 0.7)
+    ),
+    url(/images/backgrounds/brush-strokes-ripped.png);
+  backdrop-filter: contrast(40%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.subtitle {
+  color: var(--white);
 }
 
 .teamMembers {

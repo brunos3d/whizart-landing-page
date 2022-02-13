@@ -1,126 +1,250 @@
 .section {
-  width: 100%;
   position: relative;
-  background: var(--coral-reef);
-  display: flex;
-  flex-direction: column;
-  background-image: url(/images/old-paper-texture.jpg);
+  min-height: 1024px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: url(/images/backgrounds/light-beige.png);
+  background-size: 100%;
 }
 
 .container {
+  flex-direction: column;
+}
+
+.headline {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.content {
-  padding: 48px 0;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-}
-
-.subtitle {
-  margin-bottom: 28px;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 500;
-  letter-spacing: -0.03em;
+.headline .subtitle {
   text-align: center;
-  color: var(--el-paso);
 }
 
-.paragraph {
-  color: var(--jacko-bean);
+.headline .description {
+  max-width: 450px;
+  margin-top: 16px;
+  text-align: center;
+  color: var(--old-copper);
 }
 
-.iaInputs {
-  display: block;
-  list-style: none;
-}
-
-.cta {
-  margin-top: 37px;
-  color: var(--white);
-  background: var(--coffee-bean);
-}
-
-.award {
-  width: 100%;
-  margin-top: 54px;
+.nasaLink {
+  margin-top: 32px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.awardText {
-  margin-left: 22px;
-  font-size: 18px;
+.nasaLink > * {
+  margin-left: 12px;
+}
+
+.nasaText {
+  white-space: nowrap;
+  font-family: Outfit;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
-  line-height: 23px;
+  line-height: 17px;
+  letter-spacing: 0em;
   text-align: left;
-  color: var(--coffee-bean);
+  color: var(--cola);
 }
 
-.iaImage {
-  max-height: 100vh;
-}
-
-.backgroundContainer.mobile {
+.tabMenu {
   width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tabList {
+  width: 100%;
+  margin-top: 32px;
+  padding-bottom: 16px;
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.tabList:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tabList:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33%;
+  height: 3px;
+  background: var(--gold);
+  transition: 0.3s all ease-in-out;
+}
+
+.tabList.start:after {
+  transform: translateX(0%);
+}
+
+.tabList.middle:after {
+  transform: translateX(100%);
+}
+
+.tabList.end:after {
+  transform: translateX(200%);
+}
+
+.tab {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: none;
+}
+
+.tab .text {
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--cioccolato);
+}
+
+.chevron {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.tabPanelContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tabPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panelImage {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.tabPanelContent {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.backgroundContainer:not(.mobile) {
-  display: none;
+.tabPanelContent .description {
+  max-width: 474px;
+}
+
+.tabPanelContent .description {
+  margin-top: 16px;
+}
+
+.tabPanelContent .cta {
+  margin-top: 32px;
+}
+
+/* Extra small devices */
+@media (min-width: 375px) {
+  .nasaLink {
+    flex-direction: row;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .nasaLink > * {
+    margin-left: 24px;
+  }
+
+  .nasaText {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .tab .text {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .subtitle {
-    font-size: 40px;
-    line-height: 56px;
+  .section {
+    padding-top: 160px;
+    padding-bottom: 180px;
+  }
+
+  .headline {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .headline .subtitle,
+  .headline .description {
+    text-align: left;
+  }
+
+  .nasaLink {
+    margin-top: 24px;
+  }
+
+  .tabPanelContainer {
+    margin-top: 60px;
+  }
+
+  .tabPanel {
+    flex-direction: row;
+  }
+
+  .tabPanelContent {
+    margin-top: 0;
+    padding-left: 32px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .section {
-    height: 1px;
-    min-height: min(100vh, 55vw);
+  .tabMenu {
+    margin-top: 48px;
     flex-direction: row;
   }
 
-  .container {
-    flex-direction: row;
+  .tabMenu .subtitle {
+    margin-right: 32px;
+    white-space: nowrap;
   }
 
-  .content {
-    max-width: 453px;
+  .tabList {
+    margin-top: 0;
+    max-width: 728px;
   }
 
-  .backgroundContainer.mobile {
-    display: none;
-  }
-
-  .backgroundContainer:not(.mobile) {
-    display: unset;
+  .tabPanelContent .cta {
+    max-width: 231px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .subtitle {
-    font-size: 56px;
-    line-height: 73px;
-  }
 }

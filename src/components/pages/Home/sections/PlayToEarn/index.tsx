@@ -1,48 +1,71 @@
-import Image from 'next/image';
 import { HTMLAttributes } from 'react';
+import Image from 'next/image';
+import { Scene } from 'react-scrollmagic';
 import cn from 'classnames';
 
 import { WHITEPAPER_URL } from '@/data/urls';
-import { Container, Subtitle, Paragraph, LinkButton } from '@/components';
+import { Container, Subtitle, Text, LinkButton } from '@/components';
 
 import styles from './styles.module.css';
 
 export type PlayToEarnProps = HTMLAttributes<HTMLElement>;
 
+const features = [
+  `WhizArt is an easy to play game made for everyone!`,
+  `With few clicks you can manage artists, workshops and paints.`,
+  `Earn $WHIZ and participate in the world of NFT Art.`,
+];
+
 export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
   return (
-    <section className={cn(styles.section, className)} {...rest}>
-      <Container className={styles.container}>
-        <div className={styles.content}>
-          <Subtitle className={styles.subtitle}>Play to Earn</Subtitle>
-          <Paragraph className={styles.paragraph}>
-            Manage artists, workshops and paints to earn $WHIZ and contribute to
-            the world of NFT Art..
-          </Paragraph>
-          <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
-            Read the Whitepaper
-          </LinkButton>
-        </div>
-      </Container>
-
-      <div className={cn(styles.backgroundContainer, styles.mobile)}>
-        <Image
-          src="/images/coins-and-tools.png"
-          alt="Painting showing brushes, gold coins, ink drops and flying papers"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
-      </div>
-
-      <div className={styles.backgroundContainer}>
-        <Image
-          src="/images/coins-and-tools.png"
-          alt="Painting showing brushes, gold coins, ink drops and flying papers"
-          width={709}
-          height={506}
-        />
-      </div>
-    </section>
+    <Scene duration="100%" triggerHook="onEnter" indicators={false}>
+      {(progress: number) => (
+        <section
+          className={cn(styles.section, className)}
+          style={{ backgroundPositionY: `${100 - progress * 100}%` }}
+          {...rest}
+        >
+          <Container className={styles.container}>
+            <div className={styles.frame}>
+              <div className={styles.headline}>
+                <Image
+                  src="/icons/controller.svg"
+                  alt="Controller Icon"
+                  width="48"
+                  height="48"
+                />
+                <Subtitle className={styles.subtitle}>Play To Earn</Subtitle>
+              </div>
+              <div className={styles.content}>
+                <ul className={styles.features}>
+                  {features.map((feature) => (
+                    <li className={styles.feature} key={feature}>
+                      <div>
+                        <Image
+                          src="/icons/check-blue.svg"
+                          alt="Check"
+                          width="24"
+                          height="24"
+                          layout="fixed"
+                        />
+                      </div>
+                      <Text className={styles.featText}>{feature}</Text>
+                    </li>
+                  ))}
+                </ul>
+                <LinkButton
+                  className={styles.cta}
+                  href={WHITEPAPER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read Whitepaper
+                </LinkButton>
+              </div>
+            </div>
+          </Container>
+        </section>
+      )}
+    </Scene>
   );
 }

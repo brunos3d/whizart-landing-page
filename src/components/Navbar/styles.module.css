@@ -1,0 +1,25 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-bottom: 13px;
+  background: var(--champagne);
+}
+
+.container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  max-width: 606px;
+  padding: 24px;
+}
+
+.cta {
+  max-width: 155px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

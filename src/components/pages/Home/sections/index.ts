@@ -1,9 +1,10 @@
-export { default as Navbar } from './Navbar';
-export { default as Hero } from './Hero';
-export { default as PlayToEarn } from './PlayToEarn';
-export { default as Gameplay } from './Gameplay';
-export { default as Artists } from './Artists';
 export { default as ArtificialIntelligence } from './ArtificialIntelligence';
-export { default as Tokenomics } from './Tokenomics';
+export { default as Community } from './Community';
+export { default as Gameplay } from './Gameplay';
+export { default as Hero } from './Hero';
+export { default as NFT } from './NFT';
+export { default as Partners } from './Partners';
+export { default as PlayToEarn } from './PlayToEarn';
+export { default as Roadmap } from './Roadmap';
 export { default as Team } from './Team';
-export { default as Footer } from './Footer';
+export { default as Tokenomics } from './Tokenomics';
