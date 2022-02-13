@@ -50,7 +50,7 @@ export default function Home() {
     <Controller>
       <SEO shouldIndexPage />
 
-      <Scene
+      {/* <Scene
         offset={50}
         indicators={false}
         triggerHook={0}
@@ -58,7 +58,7 @@ export default function Home() {
         classToggle={[`.${styles.navbar}`, styles.navbarShow]}
       >
         <Navbar className={styles.navbar} sections={sections} />
-      </Scene>
+      </Scene> */}
 
       <main className={styles.main}>
         <Hero />
@@ -67,7 +67,7 @@ export default function Home() {
 
         <PlayToEarn id="play-to-earn" />
 
-        <Gameplay id="gameplay" />
+        {/* <Gameplay id="gameplay" />
 
         <NFT id="nft" />
 
@@ -81,7 +81,7 @@ export default function Home() {
 
         <Community id="community" />
 
-        <Footer sections={sections} />
+        <Footer sections={sections} /> */}
       </main>
     </Controller>
   );

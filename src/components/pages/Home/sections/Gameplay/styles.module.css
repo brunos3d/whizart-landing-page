@@ -37,6 +37,10 @@
   color: var(--white);
 }
 
+.navLink:hover {
+  color: var(--gold);
+}
+
 .hr {
   width: 100%;
   height: 1px;

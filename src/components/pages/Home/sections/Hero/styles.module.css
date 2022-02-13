@@ -1,7 +1,7 @@
 .section {
   position: relative;
-  min-height: 947px;
   padding-top: 28px;
+  padding-bottom: calc(min(100vw, 1216px) * 0.4);
   background: url(/images/backgrounds/light-beige.png);
   background-size: 100%;
 }
@@ -14,7 +14,7 @@
 }
 
 .nav {
-  max-width: 686px;
+  display: none;
 }
 
 .content {
@@ -58,8 +58,10 @@
 
 .mainArtContainer {
   position: absolute;
+  width: 90%;
   left: 50%;
   bottom: 0;
+  transform: translate(-50%, 50%);
   transform-origin: left top;
   transform-style: preserve-3d;
   box-shadow: 0px 55px 109px rgba(34, 18, 10, 0.4);
@@ -70,4 +72,40 @@
   position: absolute;
   left: 14%;
   max-width: 31.990131578947%;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .nav {
+    display: flex;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .nav {
+    max-width: 686px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .section {
+    min-height: 947px;
+  }
+}
+
+@media (min-width: 1216px) {
+  .mainArtContainer {
+    width: 100%;
+    max-width: 1216px;
+  }
 }
