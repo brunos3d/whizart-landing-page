@@ -10,13 +10,13 @@ export default function Nav({ className, ...rest }: NavProps) {
   return (
     <ul className={cn(styles.links, className)} {...rest}>
       <li>
-        <Link href="/#nft">
-          <a className={styles.anchor}>NFT</a>
+        <Link href="/#gameplay">
+          <a className={styles.anchor}>Gameplay</a>
         </Link>
       </li>
       <li>
-        <Link href="/#gameplay">
-          <a className={styles.anchor}>Gameplay</a>
+        <Link href="/#nft">
+          <a className={styles.anchor}>NFT</a>
         </Link>
       </li>
       <li>
@@ -25,13 +25,13 @@ export default function Nav({ className, ...rest }: NavProps) {
         </Link>
       </li>
       <li>
-        <Link href="/#tokenomics">
-          <a className={styles.anchor}>Tokenomics</a>
+        <Link href="/#roadmap">
+          <a className={styles.anchor}>Roadmap</a>
         </Link>
       </li>
       <li>
-        <Link href="/#roadmap">
-          <a className={styles.anchor}>Roadmap</a>
+        <Link href="/#tokenomics">
+          <a className={styles.anchor}>Tokenomics</a>
         </Link>
       </li>
       <li>

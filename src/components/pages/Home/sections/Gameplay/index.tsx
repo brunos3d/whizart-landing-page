@@ -41,13 +41,13 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
         <Subtitle className={styles.subtitle}>Gameplay</Subtitle>
 
         <div className={styles.nav}>
-          <Link href="/#">
+          <Link href="/#order-commissions">
             <a className={styles.navLink}>Order Commissions</a>
           </Link>
-          <Link href="/#">
+          <Link href="/#artwork">
             <a className={styles.navLink}>Artwork</a>
           </Link>
-          <Link href="/#">
+          <Link href="/#manage-artists">
             <a className={styles.navLink}>Manage Artists</a>
           </Link>
         </div>
@@ -56,7 +56,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
 
       <Container className={styles.container}>
         <div className={styles.features}>
-          <div className={styles.feature}>
+          <div className={styles.feature} id="order-commissions">
             <div className={styles.featContent}>
               <Image
                 src="/icons/hand-coins.svg"
@@ -94,7 +94,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
             />
           </div>
 
-          <div className={cn(styles.feature, styles.inverse)}>
+          <div className={cn(styles.feature, styles.inverse)} id="artwork">
             <div className={styles.featContent}>
               <Image
                 src="/icons/palette.svg"
@@ -133,7 +133,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
             />
           </div>
 
-          <div className={styles.feature}>
+          <div className={styles.feature} id="manage-artists">
             <div className={styles.featContent}>
               <Image
                 src="/icons/person-cards.svg"
