@@ -1,7 +1,7 @@
 .section {
   position: relative;
-  padding-top: calc(365px / 2 + 160px);
-  padding-bottom: 155px;
+  padding-top: calc(365px / 2 + 100px);
+  padding-bottom: 100px;
   background: url(/images/backgrounds/blue.png);
   background-size: 100%;
 }

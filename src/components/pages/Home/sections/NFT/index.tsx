@@ -191,7 +191,6 @@ export default function NFT({ className, ...rest }: NFTProps) {
             <DisclosureContent className={styles.dPanelContent} {...dArtists}>
               <Swiper
                 grabCursor
-                navigation
                 slidesPerView={3}
                 grid={{
                   rows: 2,

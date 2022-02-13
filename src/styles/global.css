@@ -105,3 +105,11 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+.swiper-cards .swiper-pagination-bullets {
+  transform: translateY(25px);
+}
+
+.swiper-pagination-bullets * {
+  --swiper-theme-color: var(--gold);
+}

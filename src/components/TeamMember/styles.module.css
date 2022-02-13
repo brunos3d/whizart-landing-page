@@ -28,7 +28,7 @@
 .description {
   margin-top: 18px !important;
   text-align: center !important;
-  color: var(--white) !important;
+  color: var(--dawn-pink) !important;
 }
 
 .socialLink {
@@ -46,10 +46,5 @@
   .name {
     font-size: 24px;
     line-height: 29px;
-  }
-
-  .description {
-    font-size: 18px;
-    line-height: 27px;
   }
 }

@@ -4,7 +4,9 @@ import Image from 'next/image';
 import cn from 'classnames';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper';
+import { EffectCards, Pagination } from 'swiper';
+
+import 'swiper/css/pagination';
 
 import { WHITEPAPER_URL } from '@/data/urls';
 import { Container, Subtitle, Text, LinkButton } from '@/components';
@@ -162,9 +164,10 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
             </div>
             <div className={styles.featMedia}>
               <Swiper
-                effect="cards"
                 grabCursor
-                modules={[EffectCards]}
+                pagination
+                effect="cards"
+                modules={[EffectCards, Pagination]}
                 className={styles.swiper}
               >
                 {cards.map(({ name, url, width, height }) => (
