@@ -17,15 +17,35 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(4px);
 }
 
 .button.primary {
+  padding-bottom: 16px;
   color: var(--cioccolato);
   background: var(--gold);
+  box-shadow: 0px 4px 0px #f8b12f;
+}
+
+.button.primary:hover {
+  color: var(--gold);
+  background: var(--cioccolato);
+  box-shadow: 0px 0px 0px #f8b12f;
 }
 
 .button.secondary {
-  background: none;
+  background: #00000000;
   color: var(--cioccolato);
   border: 1px solid var(--cioccolato);
+}
+
+.button.secondary:hover {
+  color: var(--gold);
+  background: var(--cioccolato);
+  border: 1px solid #00000000;
 }

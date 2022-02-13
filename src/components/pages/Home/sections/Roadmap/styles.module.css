@@ -7,7 +7,6 @@
 }
 
 .container {
-  min-height: 100vh;
   position: relative;
 }
 
@@ -92,7 +91,7 @@
   top: 0;
   left: calc(-1 * var(--size));
   border-left: 2px solid var(--gold);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .checkpoint {

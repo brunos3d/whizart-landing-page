@@ -10,6 +10,7 @@ import {
   NFT,
   ArtificialIntelligence,
   Roadmap,
+  Tokenomics,
 } from './sections';
 
 import styles from './styles.module.css';
@@ -43,6 +44,8 @@ export default function Home() {
         <ArtificialIntelligence id="artificial-intelligence" />
 
         <Roadmap id="roadmap" />
+
+        <Tokenomics id="tokenomics" />
 
         <Team id="team" />
       </main>

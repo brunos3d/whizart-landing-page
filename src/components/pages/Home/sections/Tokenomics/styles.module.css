@@ -1,0 +1,77 @@
+.section {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 200px;
+  z-index: 1;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  background: url(/images/backgrounds/brush-strokes-ripped.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.container {
+  justify-content: space-between;
+}
+
+.content {
+  max-width: 50%;
+  padding-right: 50px;
+}
+
+.frameBackgroundContainer {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: calc(50% + 75px);
+  bottom: -38px;
+  z-index: -1;
+}
+
+.description {
+  margin-top: 16px;
+  max-width: 450px;
+}
+
+.pools {
+  margin-top: 32px;
+  list-style: none;
+}
+
+.pool {
+  display: flex;
+  align-items: center;
+}
+
+.pool + .pool {
+  margin-top: 16px;
+}
+
+.poolDescription {
+  margin-left: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--cioccolato);
+}
+
+.palette {
+  margin-top: 25px;
+  max-width: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta {
+  max-width: 231px;
+  margin-top: 82px;
+}

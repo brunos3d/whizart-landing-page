@@ -15,22 +15,22 @@ export type GameplayProps = HTMLAttributes<HTMLElement>;
 
 const cards = [
   {
-    name: `Badzilla`,
-    url: `/images/cards/artists/badzilla.png`,
-    width: `413`,
-    height: `574`,
+    name: `1`,
+    url: `/images/cards/artists/1.png`,
+    width: `280`,
+    height: `384`,
   },
   {
-    name: `Tarsila`,
-    url: `/images/cards/artists/tarsila.png`,
-    width: `413`,
-    height: `567`,
+    name: `2`,
+    url: `/images/cards/artists/2.png`,
+    width: `280`,
+    height: `384`,
   },
   {
-    name: `Salvador Daqui`,
-    url: `/images/cards/artists/salvador-daqui.png`,
-    width: `401`,
-    height: `554`,
+    name: `3`,
+    url: `/images/cards/artists/3.png`,
+    width: `280`,
+    height: `384`,
   },
 ];
 
