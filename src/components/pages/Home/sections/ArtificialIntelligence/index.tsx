@@ -133,8 +133,10 @@ export default function ArtificialIntelligence({
                   </Subtitle>
 
                   <Text className={styles.description}>
-                    Has a unique and recognizable style that will be imprinted
-                    to the Artwork.
+                    Each NFT Artist has a unique and recognizable style. During
+                    a commission an Artist may be inspired enough to activate
+                    and imprint this style to an Artwork in order to create
+                    something unique.
                   </Text>
 
                   <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
@@ -161,9 +163,9 @@ export default function ArtificialIntelligence({
                   </Subtitle>
 
                   <Text className={styles.description}>
-                    The location and source of inspiration for the Artist. It
-                    determines the theme of the artwork (landscape, portrait,
-                    meme, etc...).
+                    NFT Workshop determines which category of content image our
+                    API will bring. Our APIs search in vast bank of images to
+                    match the environment and inspiration of the Workshop.
                   </Text>
 
                   <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
@@ -190,8 +192,10 @@ export default function ArtificialIntelligence({
                   </Subtitle>
 
                   <Text className={styles.description}>
-                    Has a unique and recognizable style that will be imprinted
-                    to the Artwork.
+                    Artwork is the consequent product of playing in the WhizArt
+                    Metaverse. It may be a result of an inspired commission (or
+                    a not so inspired attempt). Either way you can mint this as
+                    your own NFT and even sell it on marketplaces!
                   </Text>
 
                   <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
