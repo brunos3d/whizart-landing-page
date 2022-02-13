@@ -25,7 +25,7 @@ const milestones = [
         complete: true,
       },
       {
-        title: `Concept Developmente`,
+        title: `Concept Development`,
         complete: true,
       },
       {
