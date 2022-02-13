@@ -44,18 +44,14 @@ export default function Hero({ className, ...rest }: HeroProps) {
 
           <Text as="h2" className={styles.subtitle}>
             WhizArt is a{` `}
-            <Link href="#gameplay">
+            <Link href="/#play-to-earn">
               <a className={styles.anchor}>play-to-earn</a>
             </Link>
-            {` `}
-            game that lets you
-            {` `}
-            <Link href="#nft">
+            {` `}game that lets you{` `}
+            <Link href="/#nft">
               <a className={styles.anchor}>create unique NFT artworks</a>
             </Link>
-            {` `}
-            tradable in OpenSea. Don&apos;t miss the second wave of Crypto
-            Games.
+            {` `}while you play.
           </Text>
 
           <div className={styles.ctas}>

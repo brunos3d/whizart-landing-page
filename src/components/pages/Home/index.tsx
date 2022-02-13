@@ -63,9 +63,9 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
 
-        <Partners />
+        <Partners id="partners" />
 
-        <PlayToEarn />
+        <PlayToEarn id="play-to-earn" />
 
         <Gameplay id="gameplay" />
 

@@ -23,11 +23,11 @@ export default function ArtificialIntelligence({
         <div className={styles.headline}>
           <div className={styles.content}>
             <Subtitle className={styles.subtitle}>
-              Artificial Inteligence
+              Artificial Intelligence
             </Subtitle>
             <Text className={styles.description}>
               Whizzy, our NASA award winning A.I, can produce unique NFT
-              artworks based on three inputs.
+              artworks based on your own Artists and Workshops
             </Text>
           </div>
 
