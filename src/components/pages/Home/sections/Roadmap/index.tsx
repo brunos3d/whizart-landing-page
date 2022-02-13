@@ -156,12 +156,14 @@ export default function Roadmap({ className, ...rest }: RoadmapProps) {
         <div className={styles.stickyContainer}>
           <Subtitle className={styles.subtitle}>Check WhizArt Roadmap</Subtitle>
 
-          <Image
-            src="/images/wooden-door.png"
-            alt="Wooden door"
-            width="375"
-            height="375"
-          />
+          <div className={styles.doorContainer}>
+            <Image
+              src="/images/wooden-door.png"
+              alt="Wooden door"
+              width="375"
+              height="375"
+            />
+          </div>
         </div>
 
         <div className={styles.roadmap}>

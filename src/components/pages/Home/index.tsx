@@ -61,9 +61,11 @@ export default function Home() {
       </Scene> */}
 
       <main className={styles.main}>
-        <Hero />
+        <div className={styles.overflowHidden}>
+          <Hero />
 
-        <Partners id="partners" />
+          <Partners id="partners" />
+        </div>
 
         <PlayToEarn id="play-to-earn" />
 
@@ -81,7 +83,7 @@ export default function Home() {
 
         <Community id="community" />
 
-        <Footer sections={sections} />
+        {/* <Footer sections={sections} /> */}
       </main>
     </Controller>
   );
