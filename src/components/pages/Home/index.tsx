@@ -67,7 +67,7 @@ export default function Home() {
 
         <PlayToEarn id="play-to-earn" />
 
-        {/* <Gameplay id="gameplay" />
+        <Gameplay id="gameplay" />
 
         <NFT id="nft" />
 
@@ -81,7 +81,7 @@ export default function Home() {
 
         <Community id="community" />
 
-        <Footer sections={sections} /> */}
+        <Footer sections={sections} />
       </main>
     </Controller>
   );

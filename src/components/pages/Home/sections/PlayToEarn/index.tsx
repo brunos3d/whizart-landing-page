@@ -40,12 +40,15 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
                 <ul className={styles.features}>
                   {features.map((feature) => (
                     <li className={styles.feature} key={feature}>
-                      <Image
-                        src="/icons/check-blue.svg"
-                        alt="Check"
-                        width="24"
-                        height="24"
-                      />
+                      <div>
+                        <Image
+                          src="/icons/check-blue.svg"
+                          alt="Check"
+                          width="24"
+                          height="24"
+                          layout="fixed"
+                        />
+                      </div>
                       <Text className={styles.featText}>{feature}</Text>
                     </li>
                   ))}
