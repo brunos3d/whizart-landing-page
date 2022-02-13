@@ -50,15 +50,17 @@ export default function Home() {
     <Controller>
       <SEO shouldIndexPage />
 
-      {/* <Scene
+      <Navbar className={styles.navbar} sections={sections} />
+
+      <Scene
         offset={50}
         indicators={false}
         triggerHook={0}
         pin
         classToggle={[`.${styles.navbar}`, styles.navbarShow]}
       >
-        <Navbar className={styles.navbar} sections={sections} />
-      </Scene> */}
+        <div></div>
+      </Scene>
 
       <main className={styles.main}>
         <div className={styles.overflowHidden}>

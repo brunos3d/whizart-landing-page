@@ -7,7 +7,7 @@ import cn from 'classnames';
 import { sections } from '@/components/pages/Home';
 
 import { WHITEPAPER_URL } from '@/data/urls';
-import { Container, Text, Badge, Nav, LinkButton } from '@/components';
+import { Container, Text, Badge, Nav, LinkButton, Banner } from '@/components';
 
 import styles from './styles.module.css';
 
@@ -18,7 +18,11 @@ export default function Hero({ className, ...rest }: HeroProps) {
     <section className={cn(styles.section, className)} {...rest}>
       <Container className={styles.container}>
         <Nav className={styles.nav} sections={sections} />
+      </Container>
 
+      <Banner />
+
+      <Container className={styles.container}>
         <div className={styles.content}>
           <Badge className={styles.badge}>Coming Soon</Badge>
 

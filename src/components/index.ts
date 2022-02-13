@@ -11,3 +11,4 @@ export { default as Badge } from './Badge';
 export { default as Text } from './Text';
 export { default as Nav } from './Nav';
 export { default as Navbar } from './Navbar';
+export { default as Banner } from './Banner';
