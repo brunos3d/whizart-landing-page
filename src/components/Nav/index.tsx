@@ -4,6 +4,7 @@ import cn from 'classnames';
 
 import type { SectionLink } from '@/types';
 
+import animated from '@/styles/animated/styles.module.css';
 import styles from './styles.module.css';
 
 export type NavProps = HTMLAttributes<HTMLElement> & {
@@ -16,7 +17,7 @@ export default function Nav({ className, sections, ...rest }: NavProps) {
       {sections.map(({ title, url }) => (
         <li key={title}>
           <Link href={url}>
-            <a className={styles.anchor}>{title}</a>
+            <a className={cn(styles.anchor, animated.underline)}>{title}</a>
           </Link>
         </li>
       ))}

@@ -18,6 +18,7 @@ import {
 } from '@/data/urls';
 import { Container, Text, Badge } from '@/components';
 
+import animated from '@/styles/animated/styles.module.css';
 import styles from './styles.module.css';
 
 export type FooterProps = HTMLAttributes<HTMLElement> & {
@@ -114,7 +115,7 @@ export default function Footer({ className, sections, ...rest }: FooterProps) {
               {sections.map(({ title, url }) => (
                 <li className={styles.link} key={title}>
                   <Link href={url}>
-                    <a className={styles.anchor}>
+                    <a className={cn(styles.anchor, animated.underline)}>
                       <Text as="span" variant="small">
                         {title}
                       </Text>
@@ -132,7 +133,11 @@ export default function Footer({ className, sections, ...rest }: FooterProps) {
             {community.map(({ title, url, soon }) => (
               <li className={styles.link} key={title}>
                 <Link href={url}>
-                  <a className={cn(styles.anchor, { [styles.disabled]: soon })}>
+                  <a
+                    className={cn(styles.anchor, animated.underline, {
+                      [styles.disabled]: soon,
+                    })}
+                  >
                     <Text as="span" variant="small">
                       {title}
                     </Text>
@@ -150,7 +155,11 @@ export default function Footer({ className, sections, ...rest }: FooterProps) {
             {about.map(({ title, url, soon }) => (
               <li className={styles.link} key={title}>
                 <Link href={url}>
-                  <a className={cn(styles.anchor, { [styles.disabled]: soon })}>
+                  <a
+                    className={cn(styles.anchor, animated.underline, {
+                      [styles.disabled]: soon,
+                    })}
+                  >
                     <Text as="span" variant="small">
                       {title}
                     </Text>
