@@ -108,71 +108,73 @@ export default function Footer({ className, sections, ...rest }: FooterProps) {
           />
           <span>Play2earn. Mint NFT Art.</span>
         </div>
-        {sections && (
+        <div className={styles.categories}>
+          {sections && (
+            <div className={styles.category}>
+              <Text className={styles.text}>Sections</Text>
+              <ul className={styles.links}>
+                {sections.map(({ title, url }) => (
+                  <li className={styles.link} key={title}>
+                    <Link href={url}>
+                      <a className={cn(styles.anchor, animated.underline)}>
+                        <Text as="span" variant="small">
+                          {title}
+                        </Text>
+                      </a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           <div className={styles.category}>
-            <Text className={styles.text}>Sections</Text>
+            <Text className={styles.text}>Community</Text>
             <ul className={styles.links}>
-              {sections.map(({ title, url }) => (
+              {community.map(({ title, url, soon }) => (
                 <li className={styles.link} key={title}>
                   <Link href={url}>
-                    <a className={cn(styles.anchor, animated.underline)}>
+                    <a
+                      className={cn(styles.anchor, animated.underline, {
+                        [styles.disabled]: soon,
+                      })}
+                    >
                       <Text as="span" variant="small">
                         {title}
                       </Text>
+                      {soon && <Badge size="small">Soon</Badge>}
                     </a>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-        )}
 
-        <div className={styles.category}>
-          <Text className={styles.text}>Community</Text>
-          <ul className={styles.links}>
-            {community.map(({ title, url, soon }) => (
-              <li className={styles.link} key={title}>
-                <Link href={url}>
-                  <a
-                    className={cn(styles.anchor, animated.underline, {
-                      [styles.disabled]: soon,
-                    })}
-                  >
-                    <Text as="span" variant="small">
-                      {title}
-                    </Text>
-                    {soon && <Badge size="small">Soon</Badge>}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className={styles.category}>
-          <Text className={styles.text}>About</Text>
-          <ul className={styles.links}>
-            {about.map(({ title, url, soon }) => (
-              <li className={styles.link} key={title}>
-                <Link href={url}>
-                  <a
-                    className={cn(styles.anchor, animated.underline, {
-                      [styles.disabled]: soon,
-                    })}
-                  >
-                    <Text as="span" variant="small">
-                      {title}
-                    </Text>
-                    {soon && (
-                      <Badge className={styles.badge} size="small">
-                        Soon
-                      </Badge>
-                    )}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className={styles.category}>
+            <Text className={styles.text}>About</Text>
+            <ul className={styles.links}>
+              {about.map(({ title, url, soon }) => (
+                <li className={styles.link} key={title}>
+                  <Link href={url}>
+                    <a
+                      className={cn(styles.anchor, animated.underline, {
+                        [styles.disabled]: soon,
+                      })}
+                    >
+                      <Text as="span" variant="small">
+                        {title}
+                      </Text>
+                      {soon && (
+                        <Badge className={styles.badge} size="small">
+                          Soon
+                        </Badge>
+                      )}
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </Container>
       <div className={styles.rightsArea}>

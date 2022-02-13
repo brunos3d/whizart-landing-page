@@ -83,7 +83,7 @@ export default function Home() {
 
         <Community id="community" />
 
-        {/* <Footer sections={sections} /> */}
+        <Footer sections={sections} />
       </main>
     </Controller>
   );
