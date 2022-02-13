@@ -11,54 +11,49 @@ export type TokenomicsProps = HTMLAttributes<HTMLElement>;
 
 const pools = [
   {
-    name: `Pre-Sale`,
+    name: `Play to Earn`,
     amount: `33%`,
     color: `#E13C36`,
   },
   {
-    name: `Public Sale`,
-    amount: `33%`,
+    name: `Team`,
+    amount: `15%`,
     color: `#498346`,
   },
   {
-    name: `Liquidity`,
-    amount: `33%`,
+    name: `Staking`,
+    amount: `10%`,
     color: `#C18D66`,
   },
   {
-    name: `Play To Earn`,
-    amount: `33%`,
+    name: `Marketing`,
+    amount: `10%`,
     color: `#F3D331`,
   },
   {
-    name: `Staking Rewards`,
-    amount: `33%`,
+    name: `Liquidity`,
+    amount: `10%`,
     color: `#81AEB3`,
   },
   {
-    name: `Team`,
-    amount: `33%`,
+    name: `Private sale`,
+    amount: `8%`,
     color: `#EC9836`,
   },
   {
-    name: `Development`,
-    amount: `33%`,
+    name: `Seed/Advisor`,
+    amount: `5%`,
     color: `#B0D552`,
   },
   {
-    name: `Partners/Advisor`,
-    amount: `33%`,
+    name: `Treasury`,
+    amount: `5%`,
     color: `#367CEC`,
   },
   {
-    name: `Treasury`,
-    amount: `33%`,
+    name: `Public sale`,
+    amount: `4%`,
     color: `#8136EC`,
-  },
-  {
-    name: `Marketing/Listing`,
-    amount: `33%`,
-    color: `#E5E5E5`,
   },
 ];
 
