@@ -1,9 +1,9 @@
 .section {
   position: relative;
-  height: 100%;
-  min-height: 720px;
+  min-height: calc((min(100vw, 1216px) * 0.532894737) + 300px);
+  /* min-height: calc(min(100vw, 1216px) * 0.6); */
   padding-top: 28px;
-  padding-bottom: 120px;
+  padding-bottom: 85px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -23,24 +23,27 @@
 }
 
 .frame {
+  overflow: hidden;
+
   width: 100%;
-  padding: 38px 102px;
+  padding: 38px 20px;
+  border-radius: 7px;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: url(/images/backgrounds/basic-frame.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
 
-.subtitle {
-  font-size: 48px;
-  line-height: 60px;
+  background: url(/images/backgrounds/basic-frame.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  z-index: 1;
 }
 
 .swiper {
   width: 100%;
+  margin-top: 32px;
   max-width: 568px;
   position: relative;
   user-select: none;
@@ -53,8 +56,7 @@
   bottom: -10px;
   left: 0;
   right: 0;
-  box-shadow: inset 25px 0px 10px -5px rgb(250, 232, 209),
-    inset -25px 0px 10px -5px rgb(255, 239, 219);
+
   z-index: 1;
   pointer-events: none;
 }
@@ -65,4 +67,55 @@
   align-items: center;
   justify-content: center;
   height: 80px;
+}
+
+/* Extra small devices */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .section {
+    min-height: calc((min(100vw, 1216px) * 0.532894737) + 260px);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .section {
+    padding-bottom: 120px;
+  }
+
+  .subtitle {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .section {
+    min-height: calc((min(100vw, 1216px) * 0.532894737) + 120px);
+  }
+
+  .frame {
+    padding: 38px 102px;
+    flex-direction: row;
+  }
+
+  .swiperContainer {
+    margin-left: 20px;
+  }
+
+  .swiper {
+    margin-top: unset;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .swiper:after {
+    box-shadow: inset 25px 0px 10px -5px rgb(250, 232, 209),
+      inset -25px 0px 10px -5px rgb(255, 239, 219);
+  }
 }

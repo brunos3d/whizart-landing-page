@@ -21,8 +21,8 @@ const partners = [
   {
     name: `BFRI`,
     url: `/logos/partners/bfri.png`,
-    width: `120`,
-    height: `84`,
+    width: `110`,
+    height: `60`,
   },
   {
     name: `Binance Smart Chain`,
@@ -44,29 +44,44 @@ export default function Partners({ className, ...rest }: PartnersProps) {
       <Container className={styles.container}>
         <div className={styles.frame}>
           <Subtitle className={styles.subtitle}>Partners:</Subtitle>
-          <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            loop
-            centeredSlides
-            grabCursor
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Autoplay]}
-            className={styles.swiper}
-          >
-            {partners.map(({ name, url, width, height }) => (
-              <SwiperSlide className={styles.slide} key={name}>
-                <Image src={url} alt={name} width={width} height={height} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className={styles.swiperContainer}>
+            <Swiper
+              spaceBetween={30}
+              loop
+              centeredSlides
+              grabCursor
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Autoplay]}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                },
+                576: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 4,
+                },
+                992: {
+                  slidesPerView: 3,
+                },
+              }}
+              className={styles.swiper}
+            >
+              {partners.map(({ name, url, width, height }) => (
+                <SwiperSlide className={styles.slide} key={name}>
+                  <Image src={url} alt={name} width={width} height={height} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </Container>
     </section>
