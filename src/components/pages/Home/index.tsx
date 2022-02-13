@@ -9,6 +9,7 @@ import {
   Gameplay,
   NFT,
   ArtificialIntelligence,
+  Roadmap,
 } from './sections';
 
 import styles from './styles.module.css';
@@ -40,6 +41,8 @@ export default function Home() {
         <NFT id="nft" />
 
         <ArtificialIntelligence id="artificial-intelligence" />
+
+        <Roadmap id="roadmap" />
 
         <Team id="team" />
       </main>

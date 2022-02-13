@@ -41,7 +41,7 @@ export default function PlayToEarn({ className, ...rest }: PlayToEarnProps) {
                   {features.map((feature) => (
                     <li className={styles.feature} key={feature}>
                       <Image
-                        src="/icons/check.svg"
+                        src="/icons/check-blue.svg"
                         alt="Check"
                         width="24"
                         height="24"
