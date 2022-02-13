@@ -54,7 +54,7 @@ const milestones = [
         complete: false,
       },
       {
-        title: `Whitelist Pre-List`,
+        title: `Whitelist pre-sale`,
         complete: false,
       },
     ],
@@ -117,7 +117,7 @@ const milestones = [
         complete: false,
       },
       {
-        title: `Open Sea`,
+        title: `Whizzy Improvements 2.0`,
         complete: false,
       },
       {
@@ -139,10 +139,6 @@ const milestones = [
       },
       {
         title: `Wonders Gameplay`,
-        complete: false,
-      },
-      {
-        title: `Whizzy Improvements 2.0`,
         complete: false,
       },
     ],
