@@ -4,7 +4,7 @@ import Image from 'next/image';
 import cn from 'classnames';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards, Pagination } from 'swiper';
+import { EffectCards, Pagination, Mousewheel, Keyboard } from 'swiper';
 
 import 'swiper/css/pagination';
 
@@ -171,8 +171,10 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
               <Swiper
                 grabCursor
                 pagination
+                mousewheel={{ forceToAxis: true }}
+                keyboard={{ enabled: true }}
                 effect="cards"
-                modules={[EffectCards, Pagination]}
+                modules={[EffectCards, Pagination, Mousewheel, Keyboard]}
                 className={styles.swiper}
               >
                 {cards.map(({ name, url, width, height }) => (

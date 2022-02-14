@@ -3,7 +3,7 @@ import Image from 'next/image';
 import cn from 'classnames';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
+import { Autoplay, Mousewheel, Keyboard } from 'swiper';
 
 import { Container, Subtitle } from '@/components';
 
@@ -50,6 +50,8 @@ export default function Partners({ className, ...rest }: PartnersProps) {
               loop
               centeredSlides
               grabCursor
+              mousewheel={{ forceToAxis: true }}
+              keyboard={{ enabled: true }}
               autoplay={{
                 delay: 1500,
                 disableOnInteraction: false,
@@ -58,7 +60,7 @@ export default function Partners({ className, ...rest }: PartnersProps) {
               pagination={{
                 clickable: true,
               }}
-              modules={[Autoplay]}
+              modules={[Autoplay, Mousewheel, Keyboard]}
               breakpoints={
                 process.env.NODE_ENV === `production`
                   ? {

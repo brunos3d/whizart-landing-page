@@ -8,7 +8,15 @@ import {
 } from 'reakit/Disclosure';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectCreative, Grid, Navigation, Pagination } from 'swiper';
+import {
+  Autoplay,
+  EffectCreative,
+  Grid,
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+} from 'swiper';
 
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
@@ -191,6 +199,8 @@ export default function NFT({ className, ...rest }: NFTProps) {
             <DisclosureContent className={styles.dPanelContent} {...dArtists}>
               <Swiper
                 grabCursor
+                mousewheel={{ forceToAxis: true }}
+                keyboard={{ enabled: true }}
                 slidesPerView={2}
                 grid={{
                   rows: 1,
@@ -225,7 +235,14 @@ export default function NFT({ className, ...rest }: NFTProps) {
                       }
                     : {}
                 }
-                modules={[Autoplay, Grid, Navigation, Pagination]}
+                modules={[
+                  Autoplay,
+                  Grid,
+                  Navigation,
+                  Pagination,
+                  Mousewheel,
+                  Keyboard,
+                ]}
                 className={styles.artistsSwiper}
               >
                 {new Array(9).fill(0).map((_, index) => (
@@ -252,6 +269,8 @@ export default function NFT({ className, ...rest }: NFTProps) {
                 grabCursor
                 navigation
                 centeredSlides
+                mousewheel={{ forceToAxis: true }}
+                keyboard={{ enabled: true }}
                 effect="creative"
                 creativeEffect={{
                   prev: {
@@ -269,7 +288,14 @@ export default function NFT({ className, ...rest }: NFTProps) {
                 pagination={{
                   clickable: true,
                 }}
-                modules={[Autoplay, EffectCreative, Navigation, Pagination]}
+                modules={[
+                  Autoplay,
+                  EffectCreative,
+                  Navigation,
+                  Pagination,
+                  Mousewheel,
+                  Keyboard,
+                ]}
                 className={styles.workshopSwiper}
               >
                 {workshops.map(({ name, url, width, height }) => (
