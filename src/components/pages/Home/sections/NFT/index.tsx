@@ -121,7 +121,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
               <Text className={styles.dDescription} variant="small">
                 There are various types of Artists (all NFTs). The Artists that
                 are rarer and have higher creativity earn more $WHIZ and have
-                better chances of generating a unique artwork.
+                better chances of generating a unique Artwork.
               </Text>
               <LinkButton
                 className={styles.dCta}

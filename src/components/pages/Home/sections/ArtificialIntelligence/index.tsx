@@ -27,7 +27,7 @@ export default function ArtificialIntelligence({
             </Subtitle>
             <Text className={styles.description}>
               Whizzy, our NASA award winning A.I, can produce unique NFT
-              artworks based on your own Artists and Workshops
+              Artworks based on your own Artists and Workshops
             </Text>
           </div>
 
@@ -134,9 +134,8 @@ export default function ArtificialIntelligence({
 
                   <Text className={styles.description}>
                     Each NFT Artist has a unique and recognizable style. During
-                    a commission an Artist may be inspired enough to activate
-                    and imprint this style to an Artwork in order to create
-                    something unique.
+                    a commission, an Artist may be inspired enough to activate
+                    and imprint their style into a unique Artwork.
                   </Text>
 
                   <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
@@ -163,9 +162,9 @@ export default function ArtificialIntelligence({
                   </Subtitle>
 
                   <Text className={styles.description}>
-                    NFT Workshop determines which category of content image our
-                    API will bring. Our APIs search in vast bank of images to
-                    match the environment and inspiration of the Workshop.
+                    NFT Workshop determines which category our API will use. Our
+                    AI searches in a vast bank of images to match the
+                    environment and inspiration of the Workshop.
                   </Text>
 
                   <LinkButton className={styles.cta} href={WHITEPAPER_URL}>
@@ -192,10 +191,10 @@ export default function ArtificialIntelligence({
                   </Subtitle>
 
                   <Text className={styles.description}>
-                    Artwork is the consequent product of playing in the WhizArt
-                    Metaverse. It may be a result of an inspired commission (or
-                    a not so inspired attempt). Either way you can mint this as
-                    your own NFT and even sell it on marketplaces!
+                    Artwork is the product of playing in the WhizArt Metaverse.
+                    It may result from an inspired commission (or a
+                    not-so-inspired attempt). Either way, you can mint this as
+                    your own NFT and even sell it on NFT marketplaces!
                   </Text>
 
                   <LinkButton className={styles.cta} href={WHITEPAPER_URL}>

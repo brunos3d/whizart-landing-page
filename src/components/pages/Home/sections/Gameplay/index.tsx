@@ -76,7 +76,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
               <Text className={styles.featDescription}>
                 In WhizArt, players assume the role of Patrons; and Commission
                 is the order to produce a piece of art. Players will order
-                commissions to the Artists they own in order to gain $WHIZ and
+                Commissions to the Artists they own in order to gain $WHIZ and
                 possibly mint NFT Art.
               </Text>
             </div>

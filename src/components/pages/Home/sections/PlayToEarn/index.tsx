@@ -11,8 +11,8 @@ import styles from './styles.module.css';
 export type PlayToEarnProps = HTMLAttributes<HTMLElement>;
 
 const features = [
-  `WhizArt is an easy to play game made for everyone!`,
-  `With few clicks you can manage artists, workshops and paints.`,
+  `WhizArt is an easy-to-play game made for everyone!`,
+  `With a few clicks you can manage Artists, Workshops and Paints.`,
   `Earn $WHIZ and participate in the world of NFT Art.`,
 ];
 

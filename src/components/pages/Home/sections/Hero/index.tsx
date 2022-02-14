@@ -53,7 +53,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
             </Link>
             {` `}game that lets you{` `}
             <Link href="/#nft">
-              <a className={styles.anchor}>create unique NFT artworks</a>
+              <a className={styles.anchor}>create unique NFT Artworks</a>
             </Link>
             {` `}while you play.
           </Text>
