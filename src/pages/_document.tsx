@@ -28,8 +28,6 @@ export default class MyDocument extends Document<DocumentProps> {
             rel="stylesheet"
           />
 
-          <link rel="icon" href="/favicon.ico" />
-
           {/* eslint-disable-next-line @next/next/next-script-for-ga */}
           <script
             async
