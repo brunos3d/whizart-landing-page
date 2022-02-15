@@ -155,7 +155,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
             <DisclosureContent className={styles.dContent} {...dWorkshop}>
               <Text className={styles.dDescription} variant="small">
                 Workshops represent the many places Artists can work. Each
-                Workshop is assigned 1 of 5 rarities. The rarer the Workshop,
+                Workshop is assigned 1 of 3 rarities. The rarer the Workshop,
                 the higher the chance of the Artist creating a piece of art.
                 Workshops can be used by the player or rented out to other
                 players.
