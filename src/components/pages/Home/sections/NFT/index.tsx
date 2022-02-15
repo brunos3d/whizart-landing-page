@@ -200,7 +200,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
               <Swiper
                 grabCursor
                 mousewheel={{ forceToAxis: true }}
-                keyboard={{ enabled: true }}
+                keyboard={{ enabled: true, pageUpDown: false }}
                 slidesPerView={2}
                 grid={{
                   rows: 1,
@@ -270,7 +270,7 @@ export default function NFT({ className, ...rest }: NFTProps) {
                 navigation
                 centeredSlides
                 mousewheel={{ forceToAxis: true }}
-                keyboard={{ enabled: true }}
+                keyboard={{ enabled: true, pageUpDown: false }}
                 effect="creative"
                 creativeEffect={{
                   prev: {

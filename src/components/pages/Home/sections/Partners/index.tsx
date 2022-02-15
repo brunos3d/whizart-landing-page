@@ -51,7 +51,7 @@ export default function Partners({ className, ...rest }: PartnersProps) {
               centeredSlides
               grabCursor
               mousewheel={{ forceToAxis: true }}
-              keyboard={{ enabled: true }}
+              keyboard={{ enabled: true, pageUpDown: false }}
               autoplay={{
                 delay: 1500,
                 disableOnInteraction: false,

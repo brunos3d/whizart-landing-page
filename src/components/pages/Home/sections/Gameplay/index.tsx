@@ -172,7 +172,7 @@ export default function Gameplay({ className, ...rest }: GameplayProps) {
                 grabCursor
                 pagination
                 mousewheel={{ forceToAxis: true }}
-                keyboard={{ enabled: true }}
+                keyboard={{ enabled: true, pageUpDown: false }}
                 effect="cards"
                 modules={[EffectCards, Pagination, Mousewheel, Keyboard]}
                 className={styles.swiper}
