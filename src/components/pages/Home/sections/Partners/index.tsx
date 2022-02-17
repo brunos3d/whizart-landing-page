@@ -24,18 +24,18 @@ const partners = [
     width: `110`,
     height: `60`,
   },
-  {
-    name: `Binance Smart Chain`,
-    url: `/logos/partners/binance-smart-chain.png`,
-    width: `204`,
-    height: `60`,
-  },
-  {
-    name: `Amazon Web Services`,
-    url: `/logos/partners/amazon-web-services.png`,
-    width: `191`,
-    height: `63`,
-  },
+  // {
+  //   name: `Binance Smart Chain`,
+  //   url: `/logos/partners/binance-smart-chain.png`,
+  //   width: `204`,
+  //   height: `60`,
+  // },
+  // {
+  //   name: `Amazon Web Services`,
+  //   url: `/logos/partners/amazon-web-services.png`,
+  //   width: `191`,
+  //   height: `63`,
+  // },
 ];
 
 export default function Partners({ className, ...rest }: PartnersProps) {
