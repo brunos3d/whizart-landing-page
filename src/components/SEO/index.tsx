@@ -45,7 +45,7 @@ export default function SEO({
   const thumb =
     image && isAbsoluteUrl(image)
       ? image
-      : urljoin(siteUrl, image || `/images/og/default.png`);
+      : urljoin(siteUrl, image || `/images/og/default-v2.png`);
 
   return (
     <Head>
