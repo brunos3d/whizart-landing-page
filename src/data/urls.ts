@@ -1,4 +1,4 @@
-export const DISCORD_INVITE_URL = `https://discord.gg/tsQTxN6GHM`;
+export const DISCORD_INVITE_URL = `https://discord.gg/DSBETEpA`;
 
 export const TELEGRAM_COMMUNITY_GLOBAL_URL = `https://t.me/+dk7CVFu48RdmZGZh`;
 
