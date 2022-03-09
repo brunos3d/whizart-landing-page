@@ -15,6 +15,11 @@ export default class MyDocument extends Document<DocumentProps> {
         <Head>
           <meta charSet="UTF-8" />
 
+          <meta
+            name="facebook-domain-verification"
+            content="ozas2ztcosy83hq6zybge3qdvcld2s"
+          />
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
 
           <link
@@ -63,6 +68,17 @@ export default class MyDocument extends Document<DocumentProps> {
           <noscript>
             You need to enable JavaScript in your browser for this application
             to work.
+          </noscript>
+
+          <noscript>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              height="1"
+              width="1"
+              style={{ display: `none` }}
+              src="https://www.facebook.com/tr?id=316975660415578&ev=PageView&noscript=1"
+              alt="facebook pixel"
+            />
           </noscript>
 
           <Main />
