@@ -8,6 +8,8 @@ import Document, {
   DocumentProps,
 } from 'next/document';
 
+import { FB_PIXEL_ID } from '@/lib/fpixel';
+
 export default class MyDocument extends Document<DocumentProps> {
   render(): JSX.Element {
     return (
@@ -62,13 +64,6 @@ export default class MyDocument extends Document<DocumentProps> {
               }}
             />
           </noscript>
-        </Head>
-
-        <body>
-          <noscript>
-            You need to enable JavaScript in your browser for this application
-            to work.
-          </noscript>
 
           <noscript>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -76,9 +71,16 @@ export default class MyDocument extends Document<DocumentProps> {
               height="1"
               width="1"
               style={{ display: `none` }}
-              src="https://www.facebook.com/tr?id=316975660415578&ev=PageView&noscript=1"
+              src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
               alt="facebook pixel"
             />
+          </noscript>
+        </Head>
+
+        <body>
+          <noscript>
+            You need to enable JavaScript in your browser for this application
+            to work.
           </noscript>
 
           <Main />
