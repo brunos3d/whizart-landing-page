@@ -5,4 +5,4 @@
 # git commit -m "YOUR COMMIT MESSAGE" --allow-empty --author="webmaster@whizart.co"
 #########
 
-build: 31
+build: 32
