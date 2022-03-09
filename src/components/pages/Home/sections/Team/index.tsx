@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 export type TeamProps = HTMLAttributes<HTMLElement>;
 
-const members: TeamMemberProps[] = [
+const mainTeamMembers: TeamMemberProps[] = [
   {
     name: `Elton Soares`,
     bio: `Serial entrepreneur who has worked with technology for the last eight years. Founded two startups and was accelerated by Microsoft and ACE, two of the largest startup accelerators in Latin America.`,
@@ -77,6 +77,21 @@ const members: TeamMemberProps[] = [
   },
 ];
 
+const marketingTeamMembers = [
+  {
+    name: `Noah Le`,
+    bio: `Working at BFRI Group and Dealrms. 6 years of experience in marketing, and 2+ years of experience working in the Crypto sector with the positions of CM, BD and marketing team leader.`,
+    avatarUrl: `/images/team/noah.webp`,
+    socialUrl: `https://www.linkedin.com/in/raissa-jensen-3b4106b0/`,
+  },
+  {
+    name: `Lucas Barton`,
+    bio: `4 years of experience in marketing, and 2+ years of experience in the Cryptocurrency sector.`,
+    avatarUrl: `/images/team/lucas-barton.webp`,
+    socialUrl: `https://www.linkedin.com/in/raissa-jensen-3b4106b0/`,
+  },
+];
+
 export default function Team({ className, ...rest }: TeamProps) {
   return (
     <section className={cn(styles.section, className)} {...rest}>
@@ -84,7 +99,19 @@ export default function Team({ className, ...rest }: TeamProps) {
         <Subtitle className={styles.subtitle}>The WhizArt Team</Subtitle>
 
         <ul className={styles.teamMembers}>
-          {members.map((member) => (
+          {mainTeamMembers.map((member) => (
+            <li key={member.name}>
+              <TeamMember className={styles.teamMember} {...member} />
+            </li>
+          ))}
+        </ul>
+
+        <Subtitle className={styles.teamTitle} as="h5">
+          Marketing
+        </Subtitle>
+
+        <ul className={styles.teamMembers}>
+          {marketingTeamMembers.map((member) => (
             <li key={member.name}>
               <TeamMember className={styles.teamMember} {...member} />
             </li>

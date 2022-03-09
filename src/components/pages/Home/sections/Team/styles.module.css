@@ -33,6 +33,11 @@
   color: var(--white);
 }
 
+.teamTitle {
+  margin-top: 32px;
+  color: var(--white);
+}
+
 .teamMembers {
   width: 100%;
   margin-top: 71px;
@@ -74,6 +79,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .teamTitle {
+    margin-top: 140px;
+  }
+
   .teamMembers {
     gap: 78px normal;
     grid-template-columns: repeat(3, 1fr);
