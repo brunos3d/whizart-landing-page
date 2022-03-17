@@ -5,11 +5,13 @@ type Data = {
   layers: string[];
 };
 
+const arms = [1, 2, 3];
+
 const bodyParts = {
+  'left-arms': arms,
   legs: [1, 2, 3],
-  'left-arms': [1, 2, 3],
   chest: [1, 2, 3],
-  'right-arms': [1, 2, 3],
+  'right-arms': arms,
   heads: [2, 3],
   eyes: [2, 3],
   mouths: [`none`, 1],
