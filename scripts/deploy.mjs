@@ -1,7 +1,5 @@
 #!/usr/bin/env zx
 
-import 'zx/globals';
-
 const GIT_COMMIT_AUTHOR_EMAIL = 'webmaster@whizart.co';
 
 const triggerFilePath = path.join(__dirname, '../CHANGE_TO_TRIGGER_BUILD.txt');
