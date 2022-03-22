@@ -6,4 +6,4 @@
 # You can deploy automatically by running "yarn deploy"
 #########
 
-build: 38
+build: 39
