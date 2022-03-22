@@ -24,6 +24,18 @@ const partners = [
     width: `110`,
     height: `60`,
   },
+  {
+    name: `Well Played`,
+    url: `/logos/partners/well-played.png`,
+    width: `286`,
+    height: `30`,
+  },
+  {
+    name: `Metagoons Brasil`,
+    url: `/logos/partners/metagoons-brasil.png`,
+    width: `166`,
+    height: `64`,
+  },
   // {
   //   name: `Binance Smart Chain`,
   //   url: `/logos/partners/binance-smart-chain.png`,
