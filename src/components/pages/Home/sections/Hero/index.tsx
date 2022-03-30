@@ -109,7 +109,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
                 width="1216"
                 height="648"
                 objectFit="scale-down"
-                quality={80}
+                quality={100}
               />
               <div
                 className={styles.daVinciContainer}
@@ -118,9 +118,9 @@ export default function Hero({ className, ...rest }: HeroProps) {
                   transform: `translateZ(${(1 - progress) * 100}px) rotateX(-${
                     (1 - progress) * 45
                   }deg)`,
-                  filter: `drop-shadow(0px ${(1 - progress) * 100}px ${
-                    (1 - progress) * 20
-                  }px rgba(0, 0, 0, ${(1 - progress) * 0.5}))`,
+                  // filter: `drop-shadow(0px ${(1 - progress) * 100}px ${
+                  //   (1 - progress) * 20
+                  // }px rgba(0, 0, 0, ${(1 - progress) * 0.5}))`,
                 }}
               >
                 <Image
@@ -128,7 +128,7 @@ export default function Hero({ className, ...rest }: HeroProps) {
                   alt="WhizArt"
                   width="389"
                   height="236"
-                  quality={80}
+                  quality={100}
                 />
               </div>
             </div>
