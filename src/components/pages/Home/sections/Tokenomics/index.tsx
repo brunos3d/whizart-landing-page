@@ -12,22 +12,22 @@ export type TokenomicsProps = HTMLAttributes<HTMLElement>;
 const pools = [
   {
     name: `Play to Earn`,
-    amount: `33%`,
+    amount: `40%`,
     color: `#E13C36`,
   },
   {
     name: `Team`,
-    amount: `15%`,
+    amount: `14%`,
     color: `#498346`,
   },
   {
     name: `Staking`,
-    amount: `10%`,
+    amount: `7%`,
     color: `#C18D66`,
   },
   {
     name: `Marketing`,
-    amount: `10%`,
+    amount: `9%`,
     color: `#F3D331`,
   },
   {
@@ -37,7 +37,7 @@ const pools = [
   },
   {
     name: `Private sale`,
-    amount: `8%`,
+    amount: `6%`,
     color: `#EC9836`,
   },
   {
